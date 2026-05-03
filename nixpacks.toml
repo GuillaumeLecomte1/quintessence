@@ -1,2 +1,1 @@
-[nodejs]
-version = "22"
+nodejs.version = "22"
