@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",
-    "@tailwindcss/postcss": "^4.2.4",
     "@tanstack/react-query": "^5.0.0-beta.35",
     "@tanstack/react-router": "^0.0.1-beta.286",
     "autoprefixer": "^10.5.0",
@@ -23,7 +22,7 @@
     "react-helmet-async": "^3.0.0",
     "react-leaflet": "^4.2.1",
     "react-router-dom": "^7.14.2",
-    "tailwindcss": "^4.2.4"
+    "tailwindcss": "^3.4.19"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
