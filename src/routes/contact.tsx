@@ -3,7 +3,6 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 
-// Fix for default marker icon
 delete (L.Icon.Default.prototype as any)._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon-2x.png",
@@ -23,71 +22,75 @@ export function ContactPage() {
       </Helmet>
 
       {/* Hero Banner */}
-      <div className="relative min-h-[480px] flex items-end justify-end px-4 pb-10 pt-24 overflow-hidden shadow-[0_20px_40px_rgba(0,70,74,0.06)">
+      <div className="relative min-h-[60vh] md:min-h-[480px] flex items-end justify-end px-6 md:px-12 pb-10 pt-24 overflow-hidden shadow-[0_20px_40px_rgba(0,70,74,0.06)]">
         <div 
           className="absolute inset-0 bg-cover bg-center" 
           style={{ backgroundImage: "url('https://api.cloudly.space/resize/crop/1024/512/60/aHR0cHM6Ly9jZHQ0MC5tZWRpYS50b3VyaW5zb2Z0LmV1L3VwbG9hZC82Mjk5MzUtcGF0aC0xMzQ1NzIxLTEyODAuanBn/image.jpg')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent" />
         <div className="relative z-10 w-full max-w-2xl text-left">
-          <h1 className="font-headline text-5xl text-on-primary mb-2">
-            A Doorway to Serenity
+          <h1 className="font-display-md text-4xl md:text-5xl text-on-primary mb-2">
+            Une porte vers la sérénité
           </h1>
-          <p className="font-body text-lg text-on-primary/90 max-w-lg">
-            Begin your journey to wellness. Reach out to us to schedule an appointment or simply to ask a question.
+          <p className="font-body-lg text-lg md:text-xl text-on-primary/90 max-w-lg">
+            Commencez votre parcours vers le bien-être. Contactez-moi pour réserver une séance ou poser vos questions.
           </p>
         </div>
       </div>
 
       {/* Contact Form & Info */}
-      <div className="bg-surface-container-low rounded-xl p-8 md:p-12 my-12 shadow-[0_20px_40px_rgba(0,70,74,0.06)] relative overflow-hidden max-w-7xl mx-auto px-12">
+      <div className="bg-surface-container rounded-2xl md:rounded-xl p-8 md:p-12 my-8 md:my-12 shadow-[0_20px_40px_rgba(0,70,74,0.06)] relative overflow-hidden max-w-7xl mx-auto px-6 md:px-12">
         <div className="absolute -top-24 -right-24 w-64 h-64 bg-primary-fixed-dim/20 rounded-full blur-3xl" />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 relative z-10">
           {/* Left: Contact Form */}
-          <div className="flex flex-col gap-8">
-            <h3 className="font-headline text-2xl text-primary font-medium tracking-tight">Connect With Us</h3>
+          <div className="flex flex-col gap-6 md:gap-8">
+            <h3 className="font-display-md text-2xl md:text-3xl text-primary">Contactez-moi</h3>
             <form className="flex flex-col gap-6">
               <label className="flex flex-col group">
-                <span className="text-on-surface-variant font-label text-xs uppercase tracking-wider mb-2 transition-colors group-focus-within:text-primary">Name</span>
+                <span className="font-label-caps text-label-caps text-secondary uppercase tracking-wider mb-2 transition-colors group-focus-within:text-primary">Nom</span>
                 <input 
-                  className="w-full bg-surface-container-high rounded-md border-0 h-14 px-4 text-on-surface focus:bg-surface-container-highest focus:ring-0 transition-colors font-body text-base placeholder:text-on-surface-variant/50" 
-                  placeholder="Your full name" 
+                  className="w-full bg-surface-container-high rounded-lg border-0 h-14 px-4 text-on-surface font-body-lg focus:bg-surface-container-highest focus:ring-2 focus:ring-primary transition-all placeholder:text-on-surface-variant/50" 
+                  placeholder="Votre nom complet" 
                   type="text"
                 />
               </label>
               <label className="flex flex-col group">
-                <span className="text-on-surface-variant font-label text-xs uppercase tracking-wider mb-2 transition-colors group-focus-within:text-primary">Email</span>
+                <span className="font-label-caps text-label-caps text-secondary uppercase tracking-wider mb-2 transition-colors group-focus-within:text-primary">Email</span>
                 <input 
-                  className="w-full bg-surface-container-high rounded-md border-0 h-14 px-4 text-on-surface focus:bg-surface-container-highest focus:ring-0 transition-colors font-body text-base placeholder:text-on-surface-variant/50" 
-                  placeholder="Your email address" 
+                  className="w-full bg-surface-container-high rounded-lg border-0 h-14 px-4 text-on-surface font-body-lg focus:bg-surface-container-highest focus:ring-2 focus:ring-primary transition-all placeholder:text-on-surface-variant/50" 
+                  placeholder="Votre adresse email" 
                   type="email"
                 />
               </label>
               <label className="flex flex-col group">
-                <span className="text-on-surface-variant font-label text-xs uppercase tracking-wider mb-2 transition-colors group-focus-within:text-primary">Your Journey</span>
+                <span className="font-label-caps text-label-caps text-secondary uppercase tracking-wider mb-2 transition-colors group-focus-within:text-primary">Votre demande</span>
                 <textarea 
-                  className="w-full bg-surface-container-high rounded-md border-0 min-h-[120px] p-4 text-on-surface focus:bg-surface-container-highest focus:ring-0 transition-colors font-body text-base resize-y placeholder:text-on-surface-variant/50" 
-                  placeholder="How can we help you on your path?"
+                  className="w-full bg-surface-container-high rounded-lg border-0 min-h-[120px] p-4 text-on-surface font-body-lg focus:bg-surface-container-highest focus:ring-2 focus:ring-primary transition-all resize-y placeholder:text-on-surface-variant/50" 
+                  placeholder="Comment puis-je vous aider ?"
                 />
               </label>
-              <button className="bg-gradient-to-br from-primary to-primary-container text-on-primary font-body text-base font-medium h-14 rounded-full px-8 self-start mt-2 hover:shadow-[0_10px_20px_rgba(0,70,74,0.15)] transition-all duration-300 transform hover:-translate-y-0.5">
-                Send Message
+              <button 
+                type="submit"
+                className="bg-primary text-on-primary font-label-caps text-label-caps h-14 rounded-full px-8 self-start mt-2 hover:shadow-[0_10px_20px_rgba(0,70,74,0.15)] transition-all duration-300 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary flex items-center gap-2"
+              >
+                Envoyer
+                <span className="material-symbols-outlined">arrow_forward</span>
               </button>
             </form>
           </div>
           {/* Right: Contact Info */}
-          <div className="flex flex-col gap-10 justify-center">
+          <div className="flex flex-col gap-8 justify-center">
             <div className="flex flex-col gap-2 border-l-2 border-primary/20 pl-6 py-2">
-              <span className="text-on-surface-variant font-label text-xs uppercase tracking-wider">Phone</span>
-              <a className="font-headline text-3xl text-primary hover:text-primary-container transition-colors" href="tel:0767728236">07 67 72 82 36</a>
+              <span className="font-label-caps text-label-caps text-secondary uppercase tracking-wider">Téléphone</span>
+              <a className="font-display-md text-2xl md:text-3xl text-primary hover:text-primary-container transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded" href="tel:0767728236">07 67 72 82 36</a>
             </div>
             <div className="flex flex-col gap-2 border-l-2 border-primary/20 pl-6 py-2">
-              <span className="text-on-surface-variant font-label text-xs uppercase tracking-wider">Email</span>
-              <a className="font-body text-xl text-primary hover:text-primary-container transition-colors" href="mailto:quintessence.delphine@gmail.com">quintessence.delphine@gmail.com</a>
+              <span className="font-label-caps text-label-caps text-secondary uppercase tracking-wider">Email</span>
+              <a className="font-body-lg text-lg md:text-xl text-primary hover:text-primary-container transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded" href="mailto:quintessence.delphine@gmail.com">quintessence.delphine@gmail.com</a>
             </div>
             <div className="flex flex-col gap-2 border-l-2 border-primary/20 pl-6 py-2">
-              <span className="text-on-surface-variant font-label text-xs uppercase tracking-wider">Sanctuary</span>
-              <address className="font-body text-lg text-on-surface not-italic leading-relaxed">
+              <span className="font-label-caps text-label-caps text-secondary uppercase tracking-wider">Sanctuaire</span>
+              <address className="font-body-lg text-lg md:text-xl text-on-surface not-italic leading-relaxed">
                 90380 Roppe<br />
                 Bourgogne-Franche-Comté<br />
                 France
@@ -98,55 +101,55 @@ export function ContactPage() {
       </div>
 
       {/* FAQ */}
-      <div className="py-16 max-w-3xl mx-auto px-12">
-        <div className="flex items-center gap-4 mb-12">
+      <div className="py-[120px] max-w-3xl mx-auto px-12">
+        <div className="flex items-center gap-[32px] mb-[48px]">
           <span className="h-px bg-outline-variant/30 flex-grow" />
-          <h2 className="font-headline text-3xl text-primary tracking-tight px-4 text-center">Journal of Care</h2>
+          <h2 className="font-display-md text-3xl md:text-[48px] text-primary text-center">Questions Fréquentes</h2>
           <span className="h-px bg-outline-variant/30 flex-grow" />
         </div>
-        <div className="flex flex-col gap-6">
+        <div className="space-y-[16px]">
           <details className="group bg-surface-container-lowest rounded-xl shadow-[0_10px_30px_rgba(0,70,74,0.03)] overflow-hidden">
-            <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-headline text-xl text-on-surface group-open:text-primary transition-colors">
-              What should I bring to my first session?
-              <span className="material-symbols-outlined text-primary/60 group-open:rotate-180 transition-transform duration-300">expand_more</span>
+            <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-headline-md text-headline-md text-on-surface group-open:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary">
+              Que dois-je apporter à ma première séance ?
+              <span className="material-symbols-outlined text-secondary transition-transform group-hover:rotate-45">add</span>
             </summary>
-            <div className="p-6 pt-0 font-body text-base text-on-surface-variant leading-relaxed">
-              Simply bring yourself in comfortable clothing. If you have any recent medical records or a list of current medications/supplements, those can be helpful for our initial consultation. We provide all necessary materials, including water and herbal teas.
+            <div className="p-6 pt-0 font-body-lg text-on-surface-variant leading-relaxed">
+              Apportez simplement des vêtements confortables. Si vous avez des résultats médicaux récents ou une liste de médicaments, ils peuvent être utiles pour notre premier entretien. Nous fournissons tout le nécessaire, y compris de l'eau et des tisanes.
             </div>
           </details>
           <details className="group bg-surface-container-lowest rounded-xl shadow-[0_10px_30px_rgba(0,70,74,0.03)] overflow-hidden">
-            <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-headline text-xl text-on-surface group-open:text-primary transition-colors">
-              Are sessions reimbursed by health insurance?
-              <span className="material-symbols-outlined text-primary/60 group-open:rotate-180 transition-transform duration-300">expand_more</span>
+            <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-headline-md text-headline-md text-on-surface group-open:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary">
+              Les séances sont-elles remboursées ?
+              <span className="material-symbols-outlined text-secondary transition-transform group-hover:rotate-45">add</span>
             </summary>
-            <div className="p-6 pt-0 font-body text-base text-on-surface-variant leading-relaxed">
-              While naturopathy is not covered by standard state health insurance, many private mutual insurances (mutuelles) offer partial or full reimbursement for holistic and alternative therapies. We provide an invoice after each session for you to submit to your provider.
+            <div className="p-6 pt-0 font-body-lg text-on-surface-variant leading-relaxed">
+              La naturopathie n'est pas prise en charge par la sécurité sociale, mais de plus en plus de mutuelles remboursent tout ou partie des consultations. Je vous remettrai une facture détaillée à envoyer à votre organisme.
             </div>
           </details>
           <details className="group bg-surface-container-lowest rounded-xl shadow-[0_10px_30px_rgba(0,70,74,0.03)] overflow-hidden">
-            <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-headline text-xl text-on-surface group-open:text-primary transition-colors">
-              Accessibility & Parking
-              <span className="material-symbols-outlined text-primary/60 group-open:rotate-180 transition-transform duration-300">expand_more</span>
+            <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-headline-md text-headline-md text-on-surface group-open:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary">
+              Accessibilité & Parking
+              <span className="material-symbols-outlined text-secondary transition-transform group-hover:rotate-45">add</span>
             </summary>
-            <div className="p-6 pt-0 font-body text-base text-on-surface-variant leading-relaxed">
-              Our sanctuary is fully accessible on the ground floor. There is dedicated free parking available directly in front of the practice. The environment is designed to be quiet and undisturbed.
+            <div className="p-6 pt-0 font-body-lg text-on-surface-variant leading-relaxed">
+              Notre sanctuaire est entièrement accessible de plain-pied. Un parking gratuit est disponible juste devant le cabinet. L'environnement est conçu pour être calme et paisible.
             </div>
           </details>
         </div>
       </div>
 
       {/* Map */}
-      <div className="mt-8 mb-24 relative rounded-[2rem] overflow-hidden shadow-[0_20px_40px_rgba(0,70,74,0.08)] max-w-7xl mx-auto px-12">
+      <div className="my-8 md:my-12 relative rounded-2xl md:rounded-[2rem] overflow-hidden shadow-[0_20px_40px_rgba(0,70,74,0.08)] max-w-7xl mx-auto px-6 md:px-12">
         <div className="absolute inset-x-0 top-0 z-10 bg-secondary-container/90 backdrop-blur-md py-3 px-6 text-center shadow-sm">
-          <p className="font-body text-sm font-semibold text-secondary flex items-center justify-center gap-2">
-            <span className="material-symbols-outlined text-[18px]">stars</span>
-            Located just 10 minutes from Belfort city center.
+          <p className="font-body-lg text-sm md:text-base font-semibold text-secondary flex items-center justify-center gap-2">
+            <span className="material-symbols-outlined text-lg">stars</span>
+            À seulement 10 minutes du centre de Belfort.
           </p>
         </div>
         <MapContainer
           center={ROPPE_COORDS}
           zoom={15}
-          className="w-full h-[400px]"
+          className="w-full h-[300px] md:h-[400px]"
           scrollWheelZoom={false}
         >
           <TileLayer
