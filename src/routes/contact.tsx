@@ -16,9 +16,14 @@ export function ContactPage() {
   return (
     <>
       <Helmet>
-        <title>Contact - Quintessence | Prenez rendez-vous pour votre bien-être</title>
-        <meta name="description" content="Contactez Delphine pour prendre rendez-vous ou poser vos questions. Naturopathie, réflexologie, Reiki et fleurs de Bach à Roppe, Bourgogne-Franche-Comté." />
-        <meta property="og:title" content="Contact - Quintessence" />
+        <title>Contact - Quintessence | Réservez votre séance de bien-être</title>
+        <meta name="description" content="Contactez Delphine pour réserver votre séance de naturopathie, réflexologie, Reiki ou fleurs de Bach à Roppe, près de Belfort. Massage, relaxation et accompagnement holistique." />
+        <meta name="keywords" content="contact naturopathie, réflexologue Roppe, prendre rendez-vous bien-être, massage relaxation, Belfort, Bourgogne-Franche-Comté" />
+        <link rel="canonical" href="https://quintessence.fr/contact" />
+        <meta property="og:title" content="Contact - Quintessence | Réservez votre séance" />
+        <meta property="og:description" content="Réservez votre séance de naturopathie, réflexologie ou Reiki avec Delphine à Roppe. Accompagnement personnalisé pour votre bien-être." />
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:type" content="website" />
       </Helmet>
 
       {/* Hero Banner */}

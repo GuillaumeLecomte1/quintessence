@@ -11,6 +11,8 @@ import { Helmet } from "react-helmet-async";
 import { HomePage } from "./routes/index";
 import { ContactPage } from "./routes/contact";
 import { ReflexologyPage } from "./routes/reflexology";
+import { PrivacyPage } from "./routes/privacy";
+import { LegalPage } from "./routes/legal";
 
 export interface RouterContext {
   queryClient: QueryClient;
@@ -38,7 +40,19 @@ const reflexologyRoute = new Route({
   component: ReflexologyPage,
 });
 
-const routeTree = rootRoute.addChildren([indexRoute, contactRoute, reflexologyRoute]);
+const privacyRoute = new Route({
+  getParentRoute: () => rootRoute,
+  path: "/privacy",
+  component: PrivacyPage,
+});
+
+const legalRoute = new Route({
+  getParentRoute: () => rootRoute,
+  path: "/legal",
+  component: LegalPage,
+});
+
+const routeTree = rootRoute.addChildren([indexRoute, contactRoute, reflexologyRoute, privacyRoute, legalRoute]);
 
 export const router = new Router({
   routeTree,
@@ -119,8 +133,8 @@ function Footer() {
         <div className="space-y-6">
           <h5 className="font-label-caps text-label-caps text-teal-900">Légal</h5>
           <ul className="space-y-4">
-            <li><a className="font-serif text-sm text-teal-900/50 hover:text-teal-700 transition-colors" href="#">Politique de confidentialité</a></li>
-            <li><a className="font-serif text-sm text-teal-900/50 hover:text-teal-700 transition-colors" href="#">Conditions générales</a></li>
+            <li><Link to="/privacy" className="font-serif text-sm text-teal-900/50 hover:text-teal-700 transition-colors">Politique de confidentialité</Link></li>
+            <li><Link to="/legal" className="font-serif text-sm text-teal-900/50 hover:text-teal-700 transition-colors">Mentions légales</Link></li>
           </ul>
           <div className="pt-4">
             <p className="font-serif text-sm text-teal-900/50">© 2026 Quintessence Wellness. Tous droits réservés.</p>

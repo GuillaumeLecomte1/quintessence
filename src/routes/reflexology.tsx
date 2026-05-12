@@ -5,9 +5,14 @@ export function ReflexologyPage() {
   return (
     <>
       <Helmet>
-        <title>Réflexologie - Quintessence | L'Art de l'Équilibre</title>
-        <meta name="description" content="Découvrez nos techniques de réflexologie spécialisée : plantaire, palmaire et crânio-faciale. Une approche millénaire pour harmoniser le corps et l'esprit." />
-        <meta property="og:title" content="Réflexologie - Quintessence" />
+        <title>Réflexologie Plantaire, Palmaire et Crânio-faciale | Quintessence</title>
+        <meta name="description" content="Découvrez la réflexologie spécialisée à Roppe : plantaire, palmaire et crânio-faciale. Une approche millénaire pour harmoniser le corps et l'esprit, réduire le stress et améliorer la circulation." />
+        <meta name="keywords" content="réflexologie plantaire, réflexologie palmaire, réflexologie faciale, réflexologue Roppe, massage pieds, digitopression, Belfort" />
+        <link rel="canonical" href="https://quintessence.fr/reflexology" />
+        <meta property="og:title" content="Réflexologie - Quintessence | L'Art de l'Équilibre" />
+        <meta property="og:description" content="Réflexologie plantaire, palmaire et crânio-faciale à Roppe. Une méthode naturelle pour harmoniser votre corps et libérer vos tensions." />
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:type" content="website" />
       </Helmet>
 
       {/* Hero Section */}

@@ -5,11 +5,15 @@ export function HomePage() {
   return (
     <>
       <Helmet>
-        <title>Quintessence - Prendre soin de soi | Wellness & Naturopathie</title>
-        <meta name="description" content="Une approche holistique pour restaurer votre équilibre vital, harmoniser votre esprit et reconnecter avec votre essence profonde. Naturopathie, réflexologie, Reiki et fleurs de Bach." />
-        <meta property="og:title" content="Quintessence - Votre sanctuaire de bien-être" />
-        <meta property="og:description" content="Delphine vous accompagne dans une approche holistique unique." />
+        <title>Quintessence - Naturopathie, Réflexologie et Bien-être | Roppe</title>
+        <meta name="description" content="Votre sanctuaire de bien-être holistique à Roppe. Delphine vous accompagne en naturopathie, réflexologie plantaire, palmaire et crânio-faciale, Reiki et fleurs de Bach. Prenez soin de vous." />
+        <meta name="keywords" content="naturopathie, réflexologie, Reiki, fleurs de Bach, bien-être holistique, santé naturelle, Roppe, Belfort, Bourgogne-Franche-Comté" />
+        <link rel="canonical" href="https://quintessence.fr/" />
+        <meta property="og:title" content="Quintessence - Votre sanctuaire de bien-être holistique" />
+        <meta property="og:description" content="Delphine vous accompagne dans une approche holistique unique : naturopathie, réflexologie, Reiki et fleurs de Bach à Roppe." />
         <meta property="og:image" content="https://lh3.googleusercontent.com/aida-public/AB6AXuB2k5Gz3iW-gvyHBtbVaXxeVORWQr8jvrMKddIJOZ3QiFWEirIxQGT8W0e335Z_ecph9W9keSyYokL2L34itHXtQCZbpCmR8zKDUnyyxAauZzZfTC6Ce8SLokFtwxAnpDmhj-SdETnLSIt58P0hRpQjDLmX7B6F62Qta7kSPi7wijP-bm0jrARXEhi4uvFFf2ViTzXLDXnZ3b4vvUgUjGzNvaa4dNHuW6k1M6C3uhNyyFpVlgLNjss_lrqJ9dZbOhISBa6DaQZ5o6WK" />
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:type" content="website" />
       </Helmet>
 
       {/* Hero Section */}
