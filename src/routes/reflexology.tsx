@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-import { motion } from "motion/react";
 
 export function ReflexologyPage() {
   return (
@@ -16,29 +15,34 @@ export function ReflexologyPage() {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center pt-24 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img
-            className="w-full h-full object-cover"
-            alt="Pierres de basalte zen sur surface blanche"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvcG55SlTrBWf8FOzRtC3YY5Qh1fpBoFqnqbUZc5-s-jf9xwTPibwQh9qpRzJwM0lLIrW9cdI03tBpGqoNtw_iZtlHHu2srrO5fEG6kQOjQubYFJVmwdD43_N3SiCdYM3-LTay6qrw4f-T-gIj1swOjmy01C1-2yUNj6lbpoMsHs08KZWtNV2KeSJNGS-UMAsp-QRqE7BbXaT9qvE7USGK3KGxSvflAPB-6iJQP0d-UP7Rm8DvspIN57BHHbtqLQJxTZV2Exk7GEjE"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/60 to-transparent" />
-        </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-12 w-full grid grid-cols-1 md:grid-cols-2">
-          <div className="space-y-6 md:space-y-8 lg:space-y-[32px]">
-            <span className="font-label-caps text-label-caps text-secondary uppercase">Soin Holistique</span>
-            <h1 className="font-display-lg text-4xl md:text-5xl lg:text-[64px] leading-[1.1] tracking-[-0.02em] text-primary max-w-lg">
-              Réflexologie : <span className="italic font-normal">L'Art de l'Équilibre</span>
+      <section className="relative min-h-[819px] flex items-center pt-32 md:pt-40 pb-32 md:pb-40 overflow-hidden px-4 md:px-8">
+        <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
+          <div className="md:col-span-7 z-10">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold uppercase tracking-widest mb-6">Soin Holistique</span>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display-lg font-bold text-primary leading-[1.1] mb-6 md:mb-8 tracking-tight">
+              Réflexologie : <br /><span className="italic font-normal">L'Art de l'Équilibre</span>
             </h1>
-            <p className="font-body-lg text-base md:text-lg lg:text-[18px] leading-[1.7] text-on-surface-variant max-w-md">
+            <p className="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed mb-8 md:mb-10">
               Une approche millénaire pour harmoniser le corps et l'esprit à travers des points de pression précis, stimulant les capacités d'auto-guérison de votre organisme.
             </p>
-            <div className="pt-4 md:pt-8 lg:pt-[32px]">
-              <button className="bg-primary text-on-primary px-6 md:px-8 lg:px-10 py-4 md:py-5 rounded-full font-label-caps text-label-caps transition-all duration-300 hover:opacity-90 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary flex items-center gap-2">
+            <div className="flex flex-wrap gap-4">
+              <button className="bg-primary text-on-primary px-8 md:px-10 py-4 rounded-full text-base md:text-lg font-semibold hover:opacity-90 transition-all flex items-center gap-2">
                 Réserver une séance
                 <span className="material-symbols-outlined">arrow_forward</span>
               </button>
+            </div>
+          </div>
+          <div className="md:col-span-5 relative">
+            <div className="aspect-[4/5] rounded-[2rem] md:rounded-[1.5rem_1.5rem_0_10rem] overflow-hidden shadow-2xl bg-surface-container-high">
+              <img
+                className="w-full h-full object-cover"
+                alt="Pierres de basalte zen sur surface blanche"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvcG55SlTrBWf8FOzRtC3YY5Qh1fpBoFqnqbUZc5-s-jf9xwTPibwQh9qpRzJwM0lLIrW9cdI03tBpGqoNtw_iZtlHHu2srrO5fEG6kQOjQubYFJVmwdD43_N3SiCdYM3-LTay6qrw4f-T-gIj1swOjmy01C1-2yUNj6lbpoMsHs08KZWtNV2KeSJNGS-UMAsp-QRqE7BbXaT9qvE7USGK3KGxSvflAPB-6iJQP0d-UP7Rm8DvspIN57BHHbtqLQJxTZV2Exk7GEjE"
+              />
+            </div>
+            <div className="absolute -bottom-4 md:-bottom-6 -left-4 md:-left-12 hidden lg:block bg-surface-container-lowest p-6 md:p-8 rounded-2xl shadow-xl max-w-xs border border-outline-variant/10">
+              <p className="font-display-md italic text-primary text-lg mb-2">"Le pied est le miroir du corps."</p>
+              <p className="text-sm text-on-surface-variant">— Sagesse Traditionnelle</p>
             </div>
           </div>
         </div>
