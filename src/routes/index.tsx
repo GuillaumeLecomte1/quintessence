@@ -124,10 +124,10 @@ function NarrativeSection() {
               qui compte vraiment : l'humain et sa capacité innée de guérison.
             </p>
             <p>
-              Delphine s'est construite à travers l'étude passionnée de la
-              biologie humaine et des sagesses ancestrales. Aujourd'hui, je vous
-              accompagne en fusionnant la rigueur scientifique de la
-              naturopathie avec la douceur intuitive de la réflexologie.
+              Je me suis construite à travers l'étude passionnée de la biologie
+              humaine et des sagesses ancestrales. Aujourd'hui, je vous
+              accompagne en fusionnant la rigueur de la naturopathie avec la
+              douceur intuitive de la réflexologie.
             </p>
             <p>
               Chaque rencontre est une co-création. Je ne suis pas là pour
@@ -153,9 +153,6 @@ function NaturopathySection() {
       <div className="max-w-7xl mx-auto px-4 md:px-12">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-12 lg:mb-[48px] gap-4 md:gap-[16px]">
           <div className="max-w-2xl">
-            <span className="font-label-caps text-label-caps text-secondary uppercase">
-              Expertise 01
-            </span>
             <h2 className="font-display-md text-3xl md:text-4xl lg:text-[48px] leading-[1.2] tracking-[-0.01em] text-primary mt-2">
               La Naturopathie Préventive
             </h2>
@@ -188,8 +185,12 @@ function NaturopathySection() {
                 Réglage alimentaire
               </li>
               <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-secondary" /> Cure
-                saisonnière
+                <span className="w-1.5 h-1.5 rounded-full bg-secondary" />{" "}
+                Gestion du stress et des émotions
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-secondary" />{" "}
+                Mouvement et respiration
               </li>
             </ul>
           </div>
@@ -213,6 +214,10 @@ function NaturopathySection() {
               <li className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-on-primary-container" />{" "}
                 Fatigue chronique
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-on-primary-container" />{" "}
+                Hypothyroïdie
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-on-primary-container" />{" "}
@@ -245,6 +250,10 @@ function NaturopathySection() {
                 <span className="w-1.5 h-1.5 rounded-full bg-secondary" />{" "}
                 Gemmothérapie
               </li>
+              <li className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-secondary" />{" "}
+                Florithérapie
+              </li>
             </ul>
           </div>
         </div>
@@ -258,9 +267,6 @@ function ReflexologySection() {
     <section className="py-16 md:py-24 lg:py-[120px] max-w-7xl mx-auto px-4 md:px-12">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-[120px] items-center">
         <div className="space-y-6 md:space-y-8 lg:space-y-[32px]">
-          <span className="font-label-caps text-label-caps text-secondary uppercase">
-            Expertise 02
-          </span>
           <h2 className="font-display-md text-3xl md:text-4xl lg:text-[48px] leading-[1.2] tracking-[-0.01em] text-primary">
             L'Art de la Réflexologie
           </h2>
@@ -301,7 +307,9 @@ function ReflexologySection() {
                 <span className="material-symbols-outlined">face</span>
               </div>
               <div>
-                <h4 className="font-headline-md text-primary mb-1">Faciale</h4>
+                <h4 className="font-headline-md text-primary mb-1">
+                  Cranio-faciale
+                </h4>
                 <p className="font-body-md text-on-surface-variant">
                   Effet revitalisant instantané et harmonisation émotionnelle
                   par le visage.
@@ -331,9 +339,6 @@ function EnergySection() {
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-secondary-container/30 via-surface to-surface" />
       <div className="max-w-7xl mx-auto px-4 md:px-12">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16 lg:mb-[120px]">
-          <span className="font-label-caps text-label-caps text-secondary uppercase">
-            Expertise 03 & 04
-          </span>
           <h2 className="font-display-md text-3xl md:text-4xl lg:text-[48px] leading-[1.2] tracking-[-0.01em] text-primary mt-4">
             Énergie & Émotions
           </h2>
@@ -424,7 +429,7 @@ function ConsultationSection() {
                     Première Visite (1h30)
                   </h4>
                   <p className="font-body-md text-on-primary-container mt-2">
-                    Un anamnèse complet pour comprendre votre histoire, vos
+                    Une anamnèse complet pour comprendre votre histoire, vos
                     habitudes et votre vitalité. On repart avec un plan d'action
                     concret.
                   </p>

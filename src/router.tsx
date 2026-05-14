@@ -110,7 +110,7 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-12 grid grid-cols-1 md:grid-cols-4 gap-16">
         <div className="space-y-6">
           <div className="font-serif italic text-xl text-teal-900">QUINTESSENCE</div>
-          <p className="font-serif text-sm leading-relaxed text-teal-900/50">Votre havre de paix pour une santé holistique et un bien-être profond.</p>
+          <p className="font-serif text-sm leading-relaxed text-teal-900/50">Votre havre de paix pour un bien être holistique et un bien-être profond.</p>
         </div>
         <div className="space-y-6">
           <h5 className="font-label-caps text-label-caps text-teal-900">Services</h5>
@@ -126,7 +126,6 @@ function Footer() {
           <ul className="space-y-4">
             <li><a className="font-serif text-sm text-teal-900/50 hover:text-teal-700 transition-colors" href="#">Mon Histoire</a></li>
             <li><a className="font-serif text-sm text-teal-900/50 hover:text-teal-700 transition-colors" href="#">Le Cabinet</a></li>
-            <li><a className="font-serif text-sm text-teal-900/50 hover:text-teal-700 transition-colors" href="#">Blog & Conseils</a></li>
             <li><Link to="/contact" className="font-serif text-sm text-teal-900/50 hover:text-teal-700 transition-colors">Contact</Link></li>
           </ul>
         </div>

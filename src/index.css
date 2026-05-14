@@ -14,7 +14,7 @@
   --color-surface-variant: #e4e2df;
   --color-on-tertiary-container: #caa45d;
   --color-on-background: #1b1c1a;
-  --color-primary: #002e31;
+  --color-primary: #1a8cb0ff;
   --color-error: #ba1a1a;
   --color-inverse-surface: #30312f;
   --color-on-secondary-fixed-variant: #354c3c;
@@ -78,7 +78,11 @@
 
 /* Material Symbols Outlined */
 .material-symbols-outlined {
-  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 300,
+    "GRAD" 0,
+    "opsz" 24;
 }
 
 /* Leaflet Map Customization */
