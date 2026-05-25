@@ -279,7 +279,7 @@ function NavBar() {
 
 function Footer() {
   return (
-    <footer className="w-full py-24 bg-slate-50 border-t border-teal-100">
+    <footer className="w-full py-12 bg-slate-50 border-t border-teal-100">
       <div className="max-w-7xl mx-auto px-12 grid grid-cols-1 md:grid-cols-4 gap-16">
         <div className="space-y-6">
           <div className="font-serif italic text-xl text-teal-900">
@@ -392,7 +392,7 @@ function Footer() {
           </ul>
           <div className="pt-4">
             <p className="font-serif text-sm text-teal-900/50">
-              © 2026 Quintessence Wellness. Tous droits réservés.
+              © 2026 Quintessence. Tous droits réservés.
             </p>
           </div>
         </div>
