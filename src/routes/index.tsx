@@ -103,7 +103,7 @@ function NarrativeSection() {
             <img
               className="w-full h-full object-cover grayscale-[20%]"
               alt="A professional and warm portrait of Delphine"
-              src="/public/image/Portrait.jpg"
+              src="/image/Portrait.jpg"
             />
           </div>
           <div className="absolute -bottom-4 md:-bottom-8 -right-4 md:-right-8 bg-tertiary-fixed p-6 md:p-10 rounded-2xl shadow-2xl max-w-[280px] md:max-w-xs">
@@ -429,7 +429,7 @@ function ConsultationSection() {
                     Première Visite (1h30)
                   </h4>
                   <p className="font-body-md text-on-primary-container mt-2">
-                    Une anamnèse complet pour comprendre votre histoire, vos
+                    Une anamnèse complète pour comprendre votre histoire, vos
                     habitudes et votre vitalité. On repart avec un plan d'action
                     concret.
                   </p>

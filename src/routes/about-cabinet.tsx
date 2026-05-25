@@ -26,7 +26,7 @@ export function AboutCabinetPage() {
               <img
                 className="w-full h-full object-cover grayscale-[20%]"
                 alt="Interior of the healing space with natural elements"
-                src="/public/image/Bureau (2).jpg"
+                src="/image/Bureau (2).jpg"
               />
             </div>
           </div>
@@ -98,7 +98,7 @@ export function AboutCabinetPage() {
               <img
                 className="w-full h-full object-cover grayscale-[20%]"
                 alt="Hands gently holding healing crystals"
-                src="/public/image/Bureau1.jpg"
+                src="/image/Bureau1.jpg"
               />
             </div>
           </div>
