@@ -66,9 +66,6 @@ function NavBar() {
           >
             Contact
           </Link>
-          <button className="bg-primary text-on-primary px-6 lg:px-8 py-3 rounded-full font-label-caps text-label-caps hover:scale-105 transition-transform duration-300">
-            Prendre Rendez-vous
-          </button>
         </div>
 
         {/* Mobile Menu Button - Just the hamburger, no drawer */}

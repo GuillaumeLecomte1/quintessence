@@ -103,7 +103,7 @@ function NarrativeSection() {
             <img
               className="w-full h-full object-cover grayscale-[20%]"
               alt="A professional and warm portrait of Delphine"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzdaF8JgoT5LmbHE4dQPzQfMr9n2xOZGPDdb68H9nu5ZwoR6QXsOQK5Xv_3eMM4CSsdBstTBswEGFXPuUPSxI6AgMmRxhcdEPSWjKutlQPZUQwGAOZdAfQzOUOK145TIlYjOfUed7M5sQbiN8zEAtojmpKaQKp7GMQhKebWtDEoifSA7t-_chBnKYRbAqvMblSSVHeqwJYBYuzJMuy7dKdc0RbRJmXFO5XSRq-tu7WQ8sR7Mr_AMfjZ-ZOZvBx09N_tq9aouVFq4En"
+              src="/public/image/Portrait.jpg"
             />
           </div>
           <div className="absolute -bottom-4 md:-bottom-8 -right-4 md:-right-8 bg-tertiary-fixed p-6 md:p-10 rounded-2xl shadow-2xl max-w-[280px] md:max-w-xs">

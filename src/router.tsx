@@ -12,6 +12,10 @@ import { Helmet } from "react-helmet-async";
 import { HomePage } from "./routes/index";
 import { ContactPage } from "./routes/contact";
 import { ReflexologyPage } from "./routes/reflexology";
+import { ReikiPage } from "./routes/reiki";
+import { BachFlowersPage } from "./routes/bach-flowers";
+import { FiveContinentsMassagePage } from "./routes/five-continents-massage";
+import { NaturopathyPage } from "./routes/naturopathy";
 import { PrivacyPage } from "./routes/privacy";
 import { LegalPage } from "./routes/legal";
 import { AboutStoryPage } from "./routes/about-story";
@@ -43,6 +47,30 @@ const reflexologyRoute = new Route({
   component: ReflexologyPage,
 });
 
+const reikiRoute = new Route({
+  getParentRoute: () => rootRoute,
+  path: "/reiki",
+  component: ReikiPage,
+});
+
+const bachFlowersRoute = new Route({
+  getParentRoute: () => rootRoute,
+  path: "/bach-flowers",
+  component: BachFlowersPage,
+});
+
+const fiveContinentsMassageRoute = new Route({
+  getParentRoute: () => rootRoute,
+  path: "/five-continents-massage",
+  component: FiveContinentsMassagePage,
+});
+
+const naturopathyRoute = new Route({
+  getParentRoute: () => rootRoute,
+  path: "/naturopathy",
+  component: NaturopathyPage,
+});
+
 const privacyRoute = new Route({
   getParentRoute: () => rootRoute,
   path: "/privacy",
@@ -71,6 +99,10 @@ const routeTree = rootRoute.addChildren([
   indexRoute,
   contactRoute,
   reflexologyRoute,
+  reikiRoute,
+  bachFlowersRoute,
+  fiveContinentsMassageRoute,
+  naturopathyRoute,
   privacyRoute,
   legalRoute,
   aboutStoryRoute,
@@ -167,12 +199,46 @@ function NavBar() {
           >
             Services
           </a>
-          <Link
-            to="/reflexology"
-            className="font-serif tracking-wide uppercase text-sm font-medium text-[var(--color-on-surface)]/60 hover:text-[var(--color-primary)] transition-all duration-500 ease-out hover:scale-105"
-          >
-            Réflexologie
-          </Link>
+          <div className="group relative">
+            <button className="font-serif tracking-wide uppercase text-sm font-medium text-[var(--color-on-surface)]/60 group-hover:text-[var(--color-primary)] transition-all duration-500 ease-out hover:scale-105 flex items-center gap-1 cursor-pointer">
+              <span>Pratiques</span>
+              <span className="material-symbols-outlined text-base transition-transform duration-300">
+                expand_more
+              </span>
+            </button>
+            <div className="invisible group-hover:visible absolute top-full left-0 w-56 bg-white/95 backdrop-blur-xl rounded-xl shadow-lg border border-[var(--color-outline-variant)] py-2 mt-2 opacity-0 group-hover:opacity-100 transition-all duration-200">
+              <Link
+                to="/naturopathy"
+                className="block px-5 py-3 font-serif text-sm text-[var(--color-on-surface)]/70 hover:text-[var(--color-primary)] hover:bg-[var(--color-surface-container)] transition-all duration-300"
+              >
+                Naturopathie
+              </Link>
+              <Link
+                to="/reflexology"
+                className="block px-5 py-3 font-serif text-sm text-[var(--color-on-surface)]/70 hover:text-[var(--color-primary)] hover:bg-[var(--color-surface-container)] transition-all duration-300"
+              >
+                Reflexologie
+              </Link>
+              <Link
+                to="/reiki"
+                className="block px-5 py-3 font-serif text-sm text-[var(--color-on-surface)]/70 hover:text-[var(--color-primary)] hover:bg-[var(--color-surface-container)] transition-all duration-300"
+              >
+                Reiki
+              </Link>
+              <Link
+                to="/bach-flowers"
+                className="block px-5 py-3 font-serif text-sm text-[var(--color-on-surface)]/70 hover:text-[var(--color-primary)] hover:bg-[var(--color-surface-container)] transition-all duration-300"
+              >
+                Fleurs de Bach
+              </Link>
+              <Link
+                to="/five-continents-massage"
+                className="block px-5 py-3 font-serif text-sm text-[var(--color-on-surface)]/70 hover:text-[var(--color-primary)] hover:bg-[var(--color-surface-container)] transition-all duration-300"
+              >
+                Massage des 5 continents
+              </Link>
+            </div>
+          </div>
           <div className="group relative">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -231,12 +297,12 @@ function Footer() {
           </h5>
           <ul className="space-y-4">
             <li>
-              <a
+              <Link
+                to="/naturopathy"
                 className="font-serif text-sm text-teal-900/50 hover:text-teal-700 transition-colors"
-                href="#"
               >
                 Naturopathie
-              </a>
+              </Link>
             </li>
             <li>
               <Link
@@ -247,20 +313,20 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <a
+              <Link
+                to="/reiki"
                 className="font-serif text-sm text-teal-900/50 hover:text-teal-700 transition-colors"
-                href="#"
               >
                 Reiki
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
+                to="/bach-flowers"
                 className="font-serif text-sm text-teal-900/50 hover:text-teal-700 transition-colors"
-                href="#"
               >
                 Fleurs de Bach
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
