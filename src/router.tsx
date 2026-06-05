@@ -200,7 +200,7 @@ function NavBar() {
           </a>
           <div className="group relative">
             <button className="font-serif tracking-wide uppercase text-sm font-medium text-[var(--color-on-surface)]/60 group-hover:text-[var(--color-primary)] transition-all duration-500 ease-out hover:scale-105 flex items-center gap-1 cursor-pointer">
-              <span>Pratiques</span>
+              <span>Mes soins</span>
               <span className="material-symbols-outlined text-base transition-transform duration-300">
                 expand_more
               </span>
@@ -292,7 +292,7 @@ function Footer() {
         </div>
         <div className="space-y-6">
           <h5 className="font-label-caps text-label-caps text-teal-900">
-            Pratiques
+            Mes soins
           </h5>
           <ul className="space-y-4">
             <li>
