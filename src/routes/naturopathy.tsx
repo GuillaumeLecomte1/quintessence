@@ -24,7 +24,7 @@ export function NaturopathyPage() {
               Naturopathie : <br /><span className="italic font-normal">La Force Vitale en Vous</span>
             </h1>
             <p className="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed mb-8 md:mb-10">
-              La naturopathie est une approche holistique qui stimule les capacitées naturelles de votre corps à s'auto-guérir. En combinant alimentation, plantes et hygiène de vie, elle optimise votre santé durablement.
+              La naturopathie est une approche holistique qui stimule les capacités naturelles de votre corps à s'auto-guérir. En combinant alimentation, plantes et hygiène de vie, elle optimise votre santé durablement.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link to="/contact" className="bg-primary text-on-primary px-8 md:px-10 py-4 rounded-full text-base md:text-lg font-semibold hover:opacity-90 transition-all flex items-center gap-2">
@@ -76,20 +76,7 @@ export function NaturopathyPage() {
                 <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary" /> Protocoles anti-inflammatoires</li>
               </ul>
             </div>
-            {/* Hydratation */}
-            <div className="group bg-surface p-6 md:p-8 lg:p-10 rounded-2xl md:rounded-3xl shadow-sm border border-outline-variant/30 flex flex-col h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-              <div className="w-12 md:w-14 h-12 md:h-14 rounded-xl md:rounded-2xl bg-primary/10 flex items-center justify-center mb-6 md:mb-8">
-                <span className="material-symbols-outlined text-primary text-2xl md:text-3xl">water_drop</span>
-              </div>
-              <h3 className="font-headline-md text-headline-md text-primary mb-3 md:mb-4">Hydratation Vitalisante</h3>
-              <p className="font-body-md text-on-surface-variant flex-grow leading-relaxed">
-                L'eau est essentielle à toutes les fonctions vitales. Nous vous guidons vers une hydratation optimale pour purifier votre organisme et revitaliser vos cellules.
-              </p>
-              <ul className="mt-4 md:mt-[16px] space-y-2 font-label-caps text-label-caps text-on-surface">
-                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary" /> Cure hydrique</li>
-                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary" /> Monodiètes</li>
-              </ul>
-            </div>
+            
             {/* Respiration */}
             <div className="group bg-surface p-6 md:p-8 lg:p-10 rounded-2xl md:rounded-3xl shadow-sm border border-outline-variant/30 flex flex-col h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
               <div className="w-12 md:w-14 h-12 md:h-14 rounded-xl md:rounded-2xl bg-primary/10 flex items-center justify-center mb-6 md:mb-8">
@@ -104,34 +91,7 @@ export function NaturopathyPage() {
                 <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary" /> Cohérence cardiaque</li>
               </ul>
             </div>
-            {/* Plantes */}
-            <div className="group bg-surface p-6 md:p-8 lg:p-10 rounded-2xl md:rounded-3xl shadow-sm border border-outline-variant/30 flex flex-col h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-              <div className="w-12 md:w-14 h-12 md:h-14 rounded-xl md:rounded-2xl bg-primary/10 flex items-center justify-center mb-6 md:mb-8">
-                <span className="material-symbols-outlined text-primary text-2xl md:text-3xl">eco</span>
-              </div>
-              <h3 className="font-headline-md text-headline-md text-primary mb-3 md:mb-4">Phytothérapie</h3>
-              <p className="font-body-md text-on-surface-variant flex-grow leading-relaxed">
-                Les plantes médicinales offrent un soutien précieux pour votre santé. Nous sélectionnons les élixirs les plus adaptés à votre terrain et vos besoins.
-              </p>
-              <ul className="mt-4 md:mt-[16px] space-y-2 font-label-caps text-label-caps text-on-surface">
-                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary" /> Gemmothérapie</li>
-                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary" /> Aromathérapie</li>
-              </ul>
-            </div>
-            {/* Mouvement */}
-            <div className="group bg-surface p-6 md:p-8 lg:p-10 rounded-2xl md:rounded-3xl shadow-sm border border-outline-variant/30 flex flex-col h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-              <div className="w-12 md:w-14 h-12 md:h-14 rounded-xl md:rounded-2xl bg-primary/10 flex items-center justify-center mb-6 md:mb-8">
-                <span className="material-symbols-outlined text-primary text-2xl md:text-3xl">directions_run</span>
-              </div>
-              <h3 className="font-headline-md text-headline-md text-primary mb-3 md:mb-4">Mouvement Vital</h3>
-              <p className="font-body-md text-on-surface-variant flex-grow leading-relaxed">
-                Le mouvement est vie. Nous vous accompagnons vers une activité physique adaptée à votre corps, vos objectifs et votre niveau d'énergie actuel.
-              </p>
-              <ul className="mt-4 md:mt-[16px] space-y-2 font-label-caps text-label-caps text-on-surface">
-                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary" /> Exercices personnalisés</li>
-                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary" /> Stretching et yoga</li>
-              </ul>
-            </div>
+            
             {/* Équilibre */}
             <div className="group bg-surface p-6 md:p-8 lg:p-10 rounded-2xl md:rounded-3xl shadow-sm border border-outline-variant/30 flex flex-col h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
               <div className="w-12 md:w-14 h-12 md:h-14 rounded-xl md:rounded-2xl bg-primary/10 flex items-center justify-center mb-6 md:mb-8">
@@ -158,7 +118,7 @@ export function NaturopathyPage() {
               <img
                 className="rounded-[2rem] md:rounded-[3rem] lg:rounded-[4rem] shadow-xl aspect-square object-cover w-full"
                 alt="Consultation naturopathie"
-                src="/image/Naturopathie.png"
+                src="/image/photo_naturopathie2.png"
               />
               <div className="absolute -top-4 md:-top-10 -right-4 md:-right-10 w-28 md:w-48 h-28 md:h-48 bg-secondary-container rounded-full flex items-center justify-center text-center p-4 shadow-lg rotate-12">
                 <p className="text-on-secondary-container font-headline font-bold text-xs md:text-sm leading-tight">Santé Naturelle Durable</p>
