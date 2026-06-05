@@ -106,7 +106,7 @@ function NarrativeSection() {
               src="/image/Portrait.jpg"
             />
           </div>
-          <div className="absolute -bottom-4 md:-bottom-8 -right-4 md:-right-8 bg-tertiary-fixed p-6 md:p-10 rounded-2xl shadow-2xl max-w-[280px] md:max-w-xs">
+          <div className="absolute -bottom-4 md:-bottom-8 -right-4 md:-right-8 bg-primary p-6 md:p-10 rounded-2xl shadow-2xl max-w-[280px] md:max-w-xs">
             <p className="font-headline-md text-headline-md text-tertiary italic text-sm md:text-base">
               "La santé n'est pas seulement l'absence de maladie, c'est une
               vitalité rayonnante."
@@ -408,27 +408,31 @@ function EnergySection() {
 
 function ConsultationSection() {
   return (
-    <section className="py-16 md:py-24 lg:py-[120px] bg-primary text-on-primary">
-      <div className="max-w-7xl mx-auto px-4 md:px-12">
+    <section
+      className="py-16 md:py-24 lg:py-[120px] text-on-primary relative bg-cover bg-center"
+      style={{ backgroundImage: 'url(/image/Bgfloral.png)' }}
+    >
+      <div className="absolute inset-0 bg-primary/80" aria-hidden="true" />
+      <div className="max-w-7xl mx-auto px-4 md:px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-[120px]">
           <div>
             <h2 className="font-display-md text-3xl md:text-4xl lg:text-[48px] leading-[1.2] tracking-[-0.01em] mb-8 md:mb-12 lg:mb-[48px]">
               Le Voyage d'Accompagnement
             </h2>
-            <p className="font-body-lg text-on-primary-container max-w-md">
+            <p className="font-body-lg text-on-primary italic max-w-md">
               Une méthode structurée pour des résultats durables. Je vous reçois
               dans un espace dédié au calme et à l'écoute.
             </p>
             <div className="mt-8 md:mt-12 lg:mt-[48px] space-y-6 md:space-y-8 lg:space-y-[32px]">
               <div className="flex items-start gap-4 md:gap-[32px]">
-                <div className="text-3xl md:text-[48px] font-serif text-on-primary-container/30">
+                <div className="text-3xl md:text-[48px] font-serif text-on-primary-container">
                   01
                 </div>
                 <div>
                   <h4 className="font-headline-md text-on-primary">
                     Première Visite (1h30)
                   </h4>
-                  <p className="font-body-md text-on-primary-container mt-2">
+                  <p className="font-body-md text-on-primary italic mt-2">
                     Une anamnèse complète pour comprendre votre histoire, vos
                     habitudes et votre vitalité. On repart avec un plan d'action
                     concret.
@@ -436,14 +440,14 @@ function ConsultationSection() {
                 </div>
               </div>
               <div className="flex items-start gap-4 md:gap-[32px]">
-                <div className="text-3xl md:text-[48px] font-serif text-on-primary-container/30">
+                <div className="text-3xl md:text-[48px] font-serif text-on-primary-container">
                   02
                 </div>
                 <div>
                   <h4 className="font-headline-md text-on-primary">
                     Suivis (45min - 1h)
                   </h4>
-                  <p className="font-body-md text-on-primary-container mt-2">
+                  <p className="font-body-md text-on-primary italic mt-2">
                     Ajustement du protocole, observation des progrès et
                     approfondissement selon vos besoins du moment.
                   </p>
@@ -465,7 +469,7 @@ function ConsultationSection() {
                   Réserver maintenant
                 </button>
               </div>
-              <div className="mt-8 md:mt-12 lg:mt-[48px] grid grid-cols-2 gap-4 md:gap-6 lg:gap-[32px] pt-6 md:pt-8 lg:pt-[32px] border-t border-white/10">
+              <div className="mt-8 md:mt-12 lg:mt-[48px] grid grid-cols-1 sm:grid-cols-[auto_minmax(0,1fr)] gap-4 md:gap-6 lg:gap-[32px] pt-6 md:pt-8 lg:pt-[32px] border-t border-white/10">
                 <div>
                   <p className="font-label-caps text-on-primary-container uppercase text-[10px]">
                     Téléphone
@@ -476,7 +480,7 @@ function ConsultationSection() {
                   <p className="font-label-caps text-on-primary-container uppercase text-[10px]">
                     Email
                   </p>
-                  <p className="font-body-md text-on-primary">
+                  <p className="font-body-md text-on-primary break-words">
                     quintessence.delphine@gmail.com
                   </p>
                 </div>
