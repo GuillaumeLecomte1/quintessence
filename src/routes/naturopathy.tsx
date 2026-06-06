@@ -121,7 +121,7 @@ export function NaturopathyPage() {
                 src="/image/photo_naturopathie2.png"
               />
               <div className="absolute -top-4 md:-top-10 -right-4 md:-right-10 w-28 md:w-48 h-28 md:h-48 bg-secondary-container rounded-full flex items-center justify-center text-center p-4 shadow-lg rotate-12">
-                <p className="text-on-secondary-container font-headline font-bold text-xs md:text-sm leading-tight">Santé Naturelle Durable</p>
+                <p className="text-on-secondary-container font-headline font-bold text-xs md:text-sm leading-tight">Vitalité Naturelle Durable</p>
               </div>
             </div>
           </div>

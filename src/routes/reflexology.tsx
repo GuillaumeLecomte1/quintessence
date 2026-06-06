@@ -68,8 +68,8 @@ export function ReflexologyPage() {
               <img
                 className="w-full h-full object-cover"
                 alt="Pierres de basalte zen sur surface blanche"
-                src="/image/Réflexologie_plantaire.jpg"/>
-            </div>
+  src="https://www.koreva-formation.com/img/min/images/fiches_metier/bien_etre/reflexologie_400x350.jpg"
+              />            </div>
             <div className="absolute -bottom-4 md:-bottom-6 -left-4 md:-left-12 hidden lg:block bg-surface-container-lowest p-6 md:p-8 rounded-2xl shadow-xl max-w-xs border border-outline-variant/10">
               <p className="font-display-md italic text-primary text-lg mb-2">"Le pied est le miroir du corps."</p>
               <p className="text-sm text-on-surface-variant">— Sagesse Traditionnelle</p>
@@ -145,8 +145,9 @@ export function ReflexologyPage() {
               <img
                 className="rounded-[2rem] md:rounded-[3rem] lg:rounded-[4rem] shadow-xl aspect-square object-cover w-full"
                 alt="Mains effectuant un soin de réflexologie"
-                src="https://www.koreva-formation.com/img/min/images/fiches_metier/bien_etre/reflexologie_400x350.jpg"
-              />
+                                src="/image/Réflexologie_plantaire.png"/>
+
+              
               <div className="absolute -top-4 md:-top-10 -right-4 md:-right-10 w-28 md:w-48 h-28 md:h-48 bg-secondary-container rounded-full flex items-center justify-center text-center p-4 shadow-lg rotate-12">
                 <p className="text-on-secondary-container font-headline font-bold text-xs md:text-sm leading-tight">Harmonisation Naturelle du Corps</p>
               </div>

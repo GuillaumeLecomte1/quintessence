@@ -9,7 +9,7 @@ const reikiServices: TarifService[] = [
     price: "60",
     duration: "Durée ~ 1 h 30",
     inclus: [
-      "Soin énergétique complet par imposition des mains",
+      "Soin énergétique complet",
       "Canalisation de l'énergie vitale universelle",
       "Relaxation profonde et recentrage",
       "Échange en fin de séance sur vos ressentis",

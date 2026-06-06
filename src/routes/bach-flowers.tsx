@@ -5,7 +5,7 @@ import { TarifsSection, type TarifService } from "../components/ui/tarifs-sectio
 const bachFlowersServices: TarifService[] = [
   {
     icon: "local_florist",
-    title: "Consultation + flacon personnalisé",
+    title: "Consultation",
     price: "55",
     duration: "Durée ~ 1 h",
     inclus: [
@@ -22,7 +22,7 @@ const bachFlowersServices: TarifService[] = [
     price: "150",
     duration: "3 × ~ 1 h · économique",
     inclus: [
-      "Trois consultations avec flacon personnalisé",
+      "Trois consultations",
       "Suivi régulier de votre évolution émotionnelle",
       "Tarifs préférentiels vs séance à l'unité",
       "Conseils pour maintenir l'équilibre au quotidien",
@@ -113,7 +113,7 @@ export function BachFlowersPage() {
               </div>
               <h3 className="font-headline-md text-headline-md text-primary mb-3 md:mb-4">Fleurs de l'État</h3>
               <p className="font-body-md text-on-surface-variant flex-grow leading-relaxed">
-                Ces 12 fleurs dites "dupes" traitent les peurs et anxieties. Elles permettent de retrouver calme et confiance face aux épreuves du quotidien.
+                Ces 38 fleurs dites "dupes" traitent les peurs et anxieties. Elles permettent de retrouver calme et confiance face aux épreuves du quotidien.
               </p>
               <ul className="mt-4 md:mt-[16px] space-y-2 font-label-caps text-label-caps text-on-surface">
                 <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary" /> Mimulus, Cherry Plum</li>
@@ -207,13 +207,9 @@ export function BachFlowersPage() {
               <h5 className="font-headline-md text-on-primary mb-2 md:mb-3">La Sélection</h5>
               <p className="font-body-md text-on-primary-container text-sm md:text-base">Choix personnalisé des élixirs floraux les plus appropriés à votre situation du moment.</p>
             </div>
+
             <div className="p-6 md:p-8 border border-white/10 rounded-2xl md:rounded-3xl bg-white/5 backdrop-blur-sm">
               <div className="text-2xl md:text-3xl font-serif italic mb-3 md:mb-4">3.</div>
-              <h5 className="font-headline-md text-on-primary mb-2 md:mb-3">La Prescription</h5>
-              <p className="font-body-md text-on-primary-container text-sm md:text-base">Préparation de votre flacon personnalisé avec les élixirs sélectionnés et instructions de prise.</p>
-            </div>
-            <div className="p-6 md:p-8 border border-white/10 rounded-2xl md:rounded-3xl bg-white/5 backdrop-blur-sm">
-              <div className="text-2xl md:text-3xl font-serif italic mb-3 md:mb-4">4.</div>
               <h5 className="font-headline-md text-on-primary mb-2 md:mb-3">Le Suivi</h5>
               <p className="font-body-md text-on-primary-container text-sm md:text-base">Un accompagnement pour ajuster la sélection si besoin et suivre l'évolution de votre bien-être.</p>
             </div>
