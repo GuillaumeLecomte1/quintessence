@@ -38,8 +38,7 @@ export function ReflexologyPage() {
               <img
                 className="w-full h-full object-cover"
                 alt="Pierres de basalte zen sur surface blanche"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvcG55SlTrBWf8FOzRtC3YY5Qh1fpBoFqnqbUZc5-s-jf9xwTPibwQh9qpRzJwM0lLIrW9cdI03tBpGqoNtw_iZtlHHu2srrO5fEG6kQOjQubYFJVmwdD43_N3SiCdYM3-LTay6qrw4f-T-gIj1swOjmy01C1-2yUNj6lbpoMsHs08KZWtNV2KeSJNGS-UMAsp-QRqE7BbXaT9qvE7USGK3KGxSvflAPB-6iJQP0d-UP7Rm8DvspIN57BHHbtqLQJxTZV2Exk7GEjE"
-              />
+                src="/image/Réflexologie_plantaire.jpg"/>
             </div>
             <div className="absolute -bottom-4 md:-bottom-6 -left-4 md:-left-12 hidden lg:block bg-surface-container-lowest p-6 md:p-8 rounded-2xl shadow-xl max-w-xs border border-outline-variant/10">
               <p className="font-display-md italic text-primary text-lg mb-2">"Le pied est le miroir du corps."</p>
