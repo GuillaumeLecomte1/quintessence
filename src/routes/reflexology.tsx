@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
 import { TarifsSection, type TarifService } from "../components/ui/tarifs-section";
+import { LightboxImage } from "../components/ui/lightbox-image";
 
 const reflexologyServices: TarifService[] = [
   {
@@ -142,10 +143,11 @@ export function ReflexologyPage() {
         <div className="max-w-7xl mx-auto px-4 md:px-12 flex flex-col lg:flex-row gap-8 md:gap-16 lg:gap-[120px] items-center">
           <div className="w-full lg:w-1/2">
             <div className="relative">
-              <img
-                className="rounded-[2rem] md:rounded-[3rem] lg:rounded-[4rem] shadow-xl aspect-square object-cover w-full"
+              <LightboxImage
+                src="/image/Réflexologie_plantaire.png"
                 alt="Mains effectuant un soin de réflexologie"
-                                src="/image/Réflexologie_plantaire.png"/>
+                className="rounded-[2rem] md:rounded-[3rem] lg:rounded-[4rem] shadow-xl aspect-square object-cover w-full"
+              />
 
               
               <div className="absolute -top-4 md:-top-10 -right-4 md:-right-10 w-28 md:w-48 h-28 md:h-48 bg-secondary-container rounded-full flex items-center justify-center text-center p-4 shadow-lg rotate-12">

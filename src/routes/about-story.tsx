@@ -267,7 +267,7 @@ export function AboutStoryPage() {
               <img
                 className="w-full h-full object-cover grayscale-[20%]"
                 alt="Approche holistique de Delphine, praticienne à Roppe"
-                src="/image/Bureau1.jpg"
+                src="/image/delph_plantaire.jpg"
               />
             </div>
           </div>

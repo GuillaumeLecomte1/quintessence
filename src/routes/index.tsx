@@ -107,7 +107,7 @@ function NarrativeSection() {
             />
           </div>
           <div className="absolute -bottom-4 md:-bottom-8 -right-4 md:-right-8 bg-primary p-6 md:p-10 rounded-2xl shadow-2xl max-w-[280px] md:max-w-xs">
-            <p className="font-headline-md text-headline-md text-tertiary italic text-sm md:text-base">
+            <p className="font-headline-md text-headline-md text-white italic text-sm md:text-base">
               "La santé n'est pas seulement l'absence de maladie, c'est une
               vitalité rayonnante."
             </p>

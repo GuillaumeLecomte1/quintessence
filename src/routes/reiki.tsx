@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
 import { TarifsSection, type TarifService } from "../components/ui/tarifs-section";
+import { LightboxImage } from "../components/ui/lightbox-image";
 
 const reikiServices: TarifService[] = [
   {
@@ -143,10 +144,10 @@ export function ReikiPage() {
         <div className="max-w-7xl mx-auto px-4 md:px-12 flex flex-col lg:flex-row gap-8 md:gap-16 lg:gap-[120px] items-center">
           <div className="w-full lg:w-1/2">
             <div className="relative">
-              <img
-                className="rounded-[2rem] md:rounded-[3rem] lg:rounded-[4rem] shadow-xl aspect-square object-cover w-full"
-                alt="Mains en position de Reiki"
+              <LightboxImage
                 src="/image/photo_reiki.png"
+                alt="Mains en position de Reiki"
+                className="rounded-[2rem] md:rounded-[3rem] lg:rounded-[4rem] shadow-xl aspect-square object-cover w-full"
               />
               <div className="absolute -top-4 md:-top-10 -right-4 md:-right-10 w-28 md:w-48 h-28 md:h-48 bg-secondary-container rounded-full flex items-center justify-center text-center p-4 shadow-lg rotate-12">
                 <p className="text-on-secondary-container font-headline font-bold text-xs md:text-sm leading-tight">Harmonisation Énergétique Complète</p>
