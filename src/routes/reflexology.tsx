@@ -1,5 +1,35 @@
 import { Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
+import { TarifsSection, type TarifService } from "../components/ui/tarifs-section";
+
+const reflexologyServices: TarifService[] = [
+  {
+    icon: "self_care",
+    title: "Séance de réflexologie",
+    price: "55",
+    duration: "Durée ~ 1 h",
+    inclus: [
+      "Stimulation des zones réflexes (pieds, mains, visage ou crâne)",
+      "Bilan personnalisé en début de séance",
+      "Techniques adaptées à vos besoins du moment",
+      "Conseils d'hygiène de vie ciblés",
+    ],
+    pourQui: "détente, rééquilibrage du corps, gestion du stress.",
+  },
+  {
+    icon: "workspace_premium",
+    title: "Forfait 3 séances",
+    price: "150",
+    duration: "3 × ~ 1 h · économique",
+    inclus: [
+      "Trois séances de réflexologie",
+      "Suivi régulier de vos besoins",
+      "Tarifs préférentiels vs séance à l'unité",
+      "Conseils pour maintenir les bienfaits entre les séances",
+    ],
+    pourQui: "accompagnement régulier, suivi durable.",
+  },
+];
 
 export function ReflexologyPage() {
   return (
@@ -190,6 +220,13 @@ export function ReflexologyPage() {
         </div>
         <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent" />
       </section>
+
+      <TarifsSection
+        title="Choisissez le soin qui vous ressemble"
+        intro="La réflexologie s'adapte à vos besoins du moment. Que vous cherchiez une détente ponctuelle ou un suivi régulier, découvrez les formules proposées pour prendre soin de vous à votre rythme."
+        services={reflexologyServices}
+        ctaTitle="Prêt(e) à découvrir la réflexologie ?"
+      />
     </>
   );
 }

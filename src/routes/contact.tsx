@@ -49,7 +49,7 @@ export function ContactPage() {
           <img
             className="w-full h-full object-cover"
             alt="A serene spa environment with soft sunlight streaming through linen curtains"
-            src="https://api.cloudly.space/resize/crop/1024/512/60/aHR0cHM6Ly9jZHQ0MC5tZWRpYS50b3VyaW5zb2Z0LmV1L3VwbG9hZC82Mjk5MzUtcGF0aC0xMzQ1NzIxLTEyODAuanBn/image.jpg"
+            src="image/contactforet.jpg"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent" />
         </div>

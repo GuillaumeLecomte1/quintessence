@@ -1,5 +1,35 @@
 import { Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
+import { TarifsSection, type TarifService } from "../components/ui/tarifs-section";
+
+const reikiServices: TarifService[] = [
+  {
+    icon: "self_improvement",
+    title: "Séance de Reiki",
+    price: "60",
+    duration: "Durée ~ 1 h 30",
+    inclus: [
+      "Soin énergétique complet par imposition des mains",
+      "Canalisation de l'énergie vitale universelle",
+      "Relaxation profonde et recentrage",
+      "Échange en fin de séance sur vos ressentis",
+    ],
+    pourQui: "rééquilibrage énergétique, détente profonde.",
+  },
+  {
+    icon: "workspace_premium",
+    title: "Forfait 3 séances",
+    price: "160",
+    duration: "3 × ~ 1 h 30 · économique",
+    inclus: [
+      "Trois séances de Reiki",
+      "Ajustement progressif entre chaque séance",
+      "Conseils pour prolonger les bienfaits au quotidien",
+      "Suivi personnalisé de votre évolution",
+    ],
+    pourQui: "accompagnement énergétique durable.",
+  },
+];
 
 export function ReikiPage() {
   return (
@@ -191,6 +221,14 @@ export function ReikiPage() {
         </div>
         <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent" />
       </section>
+
+      <TarifsSection
+        title="Un soin adapté à vos besoins"
+        intro="Le Reiki s'offre à tous, quel que soit votre besoin du moment. Choisissez la formule qui vous correspond, de la séance ponctuelle au suivi énergétique durable."
+        services={reikiServices}
+        ctaTitle="Prêt(e) à recevoir un soin Reiki ?"
+        ctaButtonText="Réserver une séance"
+      />
     </>
   );
 }

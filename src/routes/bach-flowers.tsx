@@ -1,5 +1,35 @@
 import { Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
+import { TarifsSection, type TarifService } from "../components/ui/tarifs-section";
+
+const bachFlowersServices: TarifService[] = [
+  {
+    icon: "local_florist",
+    title: "Consultation + flacon personnalisé",
+    price: "55",
+    duration: "Durée ~ 1 h",
+    inclus: [
+      "Échange approfondi sur votre état émotionnel",
+      "Sélection personnalisée de fleurs",
+      "Préparation de votre flacon sur mesure",
+      "Conseils d'utilisation au quotidien",
+    ],
+    pourQui: "bilan émotionnel complet, première approche.",
+  },
+  {
+    icon: "workspace_premium",
+    title: "Forfait 3 séances",
+    price: "150",
+    duration: "3 × ~ 1 h · économique",
+    inclus: [
+      "Trois consultations avec flacon personnalisé",
+      "Suivi régulier de votre évolution émotionnelle",
+      "Tarifs préférentiels vs séance à l'unité",
+      "Conseils pour maintenir l'équilibre au quotidien",
+    ],
+    pourQui: "accompagnement émotionnel durable.",
+  },
+];
 
 export function BachFlowersPage() {
   return (
@@ -191,6 +221,14 @@ export function BachFlowersPage() {
         </div>
         <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent" />
       </section>
+
+      <TarifsSection
+        title="Un accompagnement émotionnel sur mesure"
+        intro="Les Fleurs de Bach vous accompagnent au quotidien dans votre rééquilibrage émotionnel, en séance ponctuelle ou en suivi durable."
+        services={bachFlowersServices}
+        ctaTitle="Prêt(e) à retrouver votre équilibre émotionnel ?"
+        ctaButtonText="Demander un rendez-vous"
+      />
     </>
   );
 }

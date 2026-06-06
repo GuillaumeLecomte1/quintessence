@@ -1,5 +1,35 @@
 import { Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
+import { TarifsSection, type TarifService } from "../components/ui/tarifs-section";
+
+const massageServices: TarifService[] = [
+  {
+    icon: "self_care",
+    title: "Séance de massage",
+    price: "80",
+    duration: "Durée ~ 80 min",
+    inclus: [
+      "Massage complet corps et visage",
+      "Techniques issues de plusieurs traditions",
+      "Huiles naturelles de qualité",
+      "Voyage sensoriel et temps d'intégration",
+    ],
+    pourQui: "expérience immersive, lâcher-prise total.",
+  },
+  {
+    icon: "workspace_premium",
+    title: "Forfait 3 séances",
+    price: "210",
+    duration: "3 × ~ 80 min · économique",
+    inclus: [
+      "Trois séances de massage",
+      "Ajustement des techniques à vos besoins",
+      "Suivi de votre évolution séance après séance",
+      "Tarifs préférentiels vs séance à l'unité",
+    ],
+    pourQui: "rituel bien-être durable.",
+  },
+];
 
 export function FiveContinentsMassagePage() {
   return (
@@ -216,6 +246,14 @@ export function FiveContinentsMassagePage() {
         </div>
         <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent" />
       </section>
+
+      <TarifsSection
+        title="Des séances pour tous les rythmes"
+        intro="Le massage des 5 continents vous invite à un voyage sensoriel unique. Découvrez les formules proposées, de la séance découverte au rituel bien-être complet."
+        services={massageServices}
+        ctaTitle="Prêt(e) pour un voyage sensoriel ?"
+        ctaButtonText="Réserver un massage"
+      />
     </>
   );
 }

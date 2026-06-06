@@ -69,7 +69,7 @@ export function NaturopathyPage() {
               </div>
               <h3 className="font-headline-md text-headline-md text-primary mb-3 md:mb-4">Alimentation Naturelle</h3>
               <p className="font-body-md text-on-surface-variant flex-grow leading-relaxed">
-                Une nutrition adaptée à vos besoins individuelles, privilégiant les aliments vivants et proches de la nature pour nourrivir votre corps et votre microbiote.
+                Une nutrition adaptée à vos besoins individuelles, privilégiant les aliments vivants et proches de la nature pour nourrir votre corps et votre microbiote.
               </p>
               <ul className="mt-4 md:mt-[16px] space-y-2 font-label-caps text-label-caps text-on-surface">
                 <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary" /> Micronutrition</li>
@@ -103,7 +103,7 @@ export function NaturopathyPage() {
               </p>
               <ul className="mt-4 md:mt-[16px] space-y-2 font-label-caps text-label-caps text-on-surface">
                 <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary" /> Gestion du stress</li>
-                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary" /> Réflexologie faciale</li>
+                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary" /> Réflexologie</li>
               </ul>
             </div>
           </div>
@@ -192,6 +192,221 @@ export function NaturopathyPage() {
           </div>
         </div>
         <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent" />
+      </section>
+
+      {/* Tarifs & Accompagnements */}
+      <section className="py-16 md:py-24 lg:py-[120px] bg-surface">
+        <div className="max-w-7xl mx-auto px-4 md:px-12">
+          <div className="mb-10 md:mb-12 lg:mb-[48px] text-center max-w-3xl mx-auto">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold uppercase tracking-widest mb-6">
+              Mes tarifs
+            </span>
+            <h2 className="font-display-md text-3xl md:text-4xl lg:text-[48px] leading-[1.2] tracking-[-0.01em] text-primary mb-4 md:mb-6">
+              Investissez dans votre bien-être
+            </h2>
+            <p className="font-body-lg text-on-surface-variant leading-relaxed">
+              Chaque accompagnement est pensé sur mesure, en fonction de vos
+              besoins et de votre rythme. Voici les formules proposées pour
+              vous accueillir, que ce soit pour une première découverte ou pour
+              un suivi durable.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-[32px]">
+            {/* Première consultation */}
+            <div className="group bg-surface p-6 md:p-8 lg:p-10 rounded-2xl md:rounded-3xl shadow-sm border border-outline-variant/30 flex flex-col h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <div className="w-12 md:w-14 h-12 md:h-14 rounded-xl md:rounded-2xl bg-primary/10 flex items-center justify-center mb-6 md:mb-8">
+                <span className="material-symbols-outlined text-primary text-2xl md:text-3xl">
+                  medical_services
+                </span>
+              </div>
+              <h3 className="font-headline-md text-headline-md text-primary mb-3 md:mb-4">
+                Bilan initial
+              </h3>
+              <div className="h-px w-12 bg-primary/20 mb-4 md:mb-6" />
+              <div className="mb-6">
+                <div className="font-display-md text-4xl md:text-5xl text-primary leading-none mb-2">
+                  70 <span className="text-2xl md:text-3xl">€</span>
+                </div>
+                <span className="font-label-caps text-label-caps text-on-surface-variant">
+                  Durée ~ 1 h 30
+                </span>
+              </div>
+              <div className="flex-grow">
+                <p className="font-label-caps text-label-caps text-on-surface mb-3">
+                  Ce qui est inclus
+                </p>
+                <ul className="space-y-2 font-body-md text-on-surface-variant">
+                  <li className="flex items-start gap-2">
+                    <span className="material-symbols-outlined text-primary text-base mt-0.5 shrink-0">
+                      check_circle
+                    </span>
+                    <span>Bilan de vitalité complet</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="material-symbols-outlined text-primary text-base mt-0.5 shrink-0">
+                      check_circle
+                    </span>
+                    <span>Échange approfondi sur vos besoins</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="material-symbols-outlined text-primary text-base mt-0.5 shrink-0">
+                      check_circle
+                    </span>
+                    <span>Programme d'hygiène vital personnalisé</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="material-symbols-outlined text-primary text-base mt-0.5 shrink-0">
+                      check_circle
+                    </span>
+                    <span>Remise du programme par mail après la séance</span>
+                  </li>
+                </ul>
+              </div>
+              <p className="font-body-md italic text-on-surface-variant mt-6 pt-6 border-t border-outline-variant/30">
+                <span className="text-primary font-medium not-italic">Pour qui :</span>{" "}
+                nouvelle venue, premier accompagnement.
+              </p>
+            </div>
+
+            {/* Consultation de suivi */}
+            <div className="group bg-surface p-6 md:p-8 lg:p-10 rounded-2xl md:rounded-3xl shadow-sm border border-outline-variant/30 flex flex-col h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <div className="w-12 md:w-14 h-12 md:h-14 rounded-xl md:rounded-2xl bg-primary/10 flex items-center justify-center mb-6 md:mb-8">
+                <span className="material-symbols-outlined text-primary text-2xl md:text-3xl">
+                  event_repeat
+                </span>
+              </div>
+              <h3 className="font-headline-md text-headline-md text-primary mb-3 md:mb-4">
+                Suivi
+              </h3>
+              <div className="h-px w-12 bg-primary/20 mb-4 md:mb-6" />
+              <div className="mb-6">
+                <div className="font-display-md text-4xl md:text-5xl text-primary leading-none mb-2">
+                  55 <span className="text-2xl md:text-3xl">€</span>
+                </div>
+                <span className="font-label-caps text-label-caps text-on-surface-variant">
+                  Durée ~ 1 h
+                </span>
+              </div>
+              <div className="flex-grow">
+                <p className="font-label-caps text-label-caps text-on-surface mb-3">
+                  Ce qui est inclus
+                </p>
+                <ul className="space-y-2 font-body-md text-on-surface-variant">
+                  <li className="flex items-start gap-2">
+                    <span className="material-symbols-outlined text-primary text-base mt-0.5 shrink-0">
+                      check_circle
+                    </span>
+                    <span>Reprise du bilan de vitalité</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="material-symbols-outlined text-primary text-base mt-0.5 shrink-0">
+                      check_circle
+                    </span>
+                    <span>Ajustement du programme en place</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="material-symbols-outlined text-primary text-base mt-0.5 shrink-0">
+                      check_circle
+                    </span>
+                    <span>Réponses à vos questions du quotidien</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="material-symbols-outlined text-primary text-base mt-0.5 shrink-0">
+                      check_circle
+                    </span>
+                    <span>Conseils ciblés sur vos blocages actuels</span>
+                  </li>
+                </ul>
+              </div>
+              <p className="font-body-md italic text-on-surface-variant mt-6 pt-6 border-t border-outline-variant/30">
+                <span className="text-primary font-medium not-italic">Pour qui :</span>{" "}
+                patient déjà accompagné, retour ponctuel.
+              </p>
+            </div>
+
+            {/* Forfait 3 suivis */}
+            <div className="group bg-surface p-6 md:p-8 lg:p-10 rounded-2xl md:rounded-3xl shadow-sm border border-outline-variant/30 flex flex-col h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <div className="w-12 md:w-14 h-12 md:h-14 rounded-xl md:rounded-2xl bg-primary/10 flex items-center justify-center mb-6 md:mb-8">
+                <span className="material-symbols-outlined text-primary text-2xl md:text-3xl">
+                  workspace_premium
+                </span>
+              </div>
+              <h3 className="font-headline-md text-headline-md text-primary mb-3 md:mb-4">
+                Forfait 3 séances
+              </h3>
+              <div className="h-px w-12 bg-primary/20 mb-4 md:mb-6" />
+              <div className="mb-6">
+                <div className="font-display-md text-4xl md:text-5xl text-primary leading-none mb-2">
+                  160 <span className="text-2xl md:text-3xl">€</span>
+                </div>
+                <span className="font-label-caps text-label-caps text-on-surface-variant">
+                  3 × ~ 1 h · économique
+                </span>
+              </div>
+              <div className="flex-grow">
+                <p className="font-label-caps text-label-caps text-on-surface mb-3">
+                  Ce qui est inclus
+                </p>
+                <ul className="space-y-2 font-body-md text-on-surface-variant">
+                  <li className="flex items-start gap-2">
+                    <span className="material-symbols-outlined text-primary text-base mt-0.5 shrink-0">
+                      check_circle
+                    </span>
+                    <span>Trois consultations de suivi</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="material-symbols-outlined text-primary text-base mt-0.5 shrink-0">
+                      check_circle
+                    </span>
+                    <span>Suivi régulier et ajustements progressifs</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="material-symbols-outlined text-primary text-base mt-0.5 shrink-0">
+                      check_circle
+                    </span>
+                    <span>Accompagnement par mail / SMS entre les séances</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="material-symbols-outlined text-primary text-base mt-0.5 shrink-0">
+                      check_circle
+                    </span>
+                    <span>Bilan final et conseils pour maintenir vos acquis</span>
+                  </li>
+                </ul>
+              </div>
+              <p className="font-body-md italic text-on-surface-variant mt-6 pt-6 border-t border-outline-variant/30">
+                <span className="text-primary font-medium not-italic">Pour qui :</span>{" "}
+                engagement durable, accompagnement mensuel.
+              </p>
+            </div>
+          </div>
+
+          <p className="text-center font-body-md text-on-surface-variant mt-10 md:mt-12 max-w-2xl mx-auto">
+            Tarifs indiqués à titre indicatif. Pour toute question ou pour
+            convenir d'un créneau, n'hésitez pas à me contacter.
+          </p>
+        </div>
+      </section>
+
+      {/* CTA Réservation */}
+      <section className="py-16 md:py-24 max-w-7xl mx-auto px-4 md:px-12">
+        <div className="bg-surface-container-low border border-outline-variant/30 rounded-2xl md:rounded-3xl p-8 md:p-12 lg:p-16 text-center flex flex-col items-center gap-6">
+          <h3 className="font-display-md text-2xl md:text-3xl lg:text-4xl text-primary leading-tight">
+            Prêt(e) à prendre soin de vous ?
+          </h3>
+          <p className="font-body-lg text-on-surface-variant max-w-xl">
+            Réservez votre première consultation ou demandez des informations
+            complémentaires. Je vous répondrai avec plaisir.
+          </p>
+          <Link
+            to="/contact"
+            className="bg-primary text-on-primary px-8 md:px-10 py-4 rounded-full text-base md:text-lg font-semibold hover:opacity-90 transition-all flex items-center gap-2"
+          >
+            Réserver une consultation
+            <span className="material-symbols-outlined">arrow_forward</span>
+          </Link>
+        </div>
       </section>
     </>
   );
