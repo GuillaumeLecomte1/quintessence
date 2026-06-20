@@ -176,36 +176,40 @@ export function FiveContinentsMassagePage() {
               <div className="flex items-start gap-4 md:gap-[32px]">
                 <span className="text-3xl md:text-[48px] font-serif text-primary/20 leading-none">01</span>
                 <div>
-                  <h4 className="font-headline-md text-primary mb-2">Relaxation profonde &amp; réduction du stress</h4>
+                  <h4 className="font-headline-md text-primary mb-2">Origine et concept</h4>
                   <p className="font-body-md text-on-surface-variant leading-relaxed">
-                    Le corps se relâche, les tensions nerveuses s'apaisent et l'esprit se dépose dans un état de calme durable.
+                    Ce massage s'inspire de différentes pratiques issues de
+                    plusieurs cultures (d'où son nom) : l'ayurvéda (Inde), le
+                    massage californien (Occident), le tuina (Chine), le
+                    lomi-lomi (Hawaï) et les techniques énergétiques (type
+                    Reiki). L'idée est de réunir ces approches pour agir sur le
+                    corps et l'énergie.
                   </p>
                 </div>
               </div>
               <div className="flex items-start gap-4 md:gap-[32px]">
                 <span className="text-3xl md:text-[48px] font-serif text-primary/20 leading-none">02</span>
                 <div>
-                  <h4 className="font-headline-md text-primary mb-2">Libération des tensions physiques et émotionnelles</h4>
+                  <h4 className="font-headline-md text-primary mb-2">Déroulement d'une séance</h4>
                   <p className="font-body-md text-on-surface-variant leading-relaxed">
-                    Les pressions ciblées dénouent les blocages du corps et libèrent les charges émotionnelles accumulées.
+                    Massage du corps entier (dos, jambes, bras, ventre) avec
+                    utilisation d'huiles essentielles spécifiques (souvent détox
+                    + relaxation). Alternance de mouvements lents et
+                    enveloppants et de gestes plus dynamiques et stimulants, avec
+                    un travail ciblé sur les points énergétiques et la
+                    circulation. Une séance dure en général 1h à 1h30.
                   </p>
                 </div>
               </div>
               <div className="flex items-start gap-4 md:gap-[32px]">
                 <span className="text-3xl md:text-[48px] font-serif text-primary/20 leading-none">03</span>
                 <div>
-                  <h4 className="font-headline-md text-primary mb-2">Stimulation de la circulation sanguine et énergétique</h4>
+                  <h4 className="font-headline-md text-primary mb-2">Bienfaits principaux</h4>
                   <p className="font-body-md text-on-surface-variant leading-relaxed">
-                    Les manœuvres dynamisantes activent la circulation et rééquilibrent les flux d'énergie vitale.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4 md:gap-[32px]">
-                <span className="text-3xl md:text-[48px] font-serif text-primary/20 leading-none">04</span>
-                <div>
-                  <h4 className="font-headline-md text-primary mb-2">Lâcher-prise &amp; revitalisation</h4>
-                  <p className="font-body-md text-on-surface-variant leading-relaxed">
-                    Une expérience qui laisse le corps léger, l'esprit apaisé et une énergie nouvelle prête à rayonner.
+                    Relaxation profonde et réduction du stress, libération des
+                    tensions physiques et émotionnelles, stimulation de la
+                    circulation (sanguine et énergétique), effet détoxifiant,
+                    et sensation de lâcher-prise et de revitalisation.
                   </p>
                 </div>
               </div>

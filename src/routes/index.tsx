@@ -115,7 +115,7 @@ function NarrativeSection() {
               src="/image/Portrait.jpg"
             />
           </div>
-          <div className="absolute -bottom-4 md:-bottom-8 -right-4 md:-right-8 bg-primary p-6 md:p-10 rounded-2xl shadow-2xl max-w-[280px] md:max-w-xs">
+          <div className="absolute -bottom-4 md:-bottom-8 -right-4 md:-right-8 bg-primary p-4 md:p-4 rounded-2xl shadow-2xl max-w-[280px] md:max-w-xs">
             <p className="font-headline-md text-headline-md text-white italic text-sm md:text-base">
               "Tant que l’âme, le Corps et l’Esprit sont en harmonie, rien ne peut nous affecter. Dr E Bach"
             </p>
