@@ -30,40 +30,34 @@ const timelineSteps = [
 
 const approaches = [
   {
-    icon: "restaurant",
-    title: "Alimentation",
-    description:
-      "Une nutrition vivante et personnalisée, base essentielle de votre équilibre.",
-  },
-  {
-    icon: "eco",
-    title: "Phytothérapie",
-    description:
-      "Les bienfaits des plantes pour soutenir et rééquilibrer votre terrain.",
-  },
-  {
     icon: "spa",
-    title: "Aromathérapie",
+    title: "Naturopathie",
     description:
-      "Les huiles essentielles pour agir en profondeur, avec douceur et précision.",
+      "Un accompagnement global pour retrouver équilibre et vitalité au quotidien.",
+  },
+  {
+    icon: "footprint",
+    title: "Réflexologie",
+    description:
+      "Soulager les tensions et stimuler les capacités naturelles du corps.",
+  },
+  {
+    icon: "self_improvement",
+    title: "Reiki",
+    description:
+      "Une pratique énergétique douce pour harmoniser corps et esprit.",
   },
   {
     icon: "local_florist",
     title: "Fleurs de Bach",
     description:
-      "L'équilibre émotionnel au cœur de votre mieux-être au quotidien.",
+      "Rééquilibrer vos émotions pour un mieux-être au naturel.",
   },
   {
-    icon: "footprint",
-    title: "Réflexologie plantaire",
+    icon: "massage",
+    title: "Massage des 5 Continents",
     description:
-      "Une approche complémentaire pour relâcher les tensions et relancer la vitalité.",
-  },
-  {
-    icon: "air",
-    title: "Respiration & stress",
-    description:
-      "Des outils simples pour apaiser le système nerveux et retrouver de l'énergie.",
+      "Un voyage sensoriel pour relâcher les tensions et renouer avec soi.",
   },
 ];
 
@@ -292,11 +286,34 @@ export function AboutStoryPage() {
               aligné avec vos besoins.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-[32px]">
-            {approaches.map((approach) => (
+          {/* Ligne du haut : 3 cartes */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-[32px]">
+            {approaches.slice(0, 3).map((approach) => (
               <div
                 key={approach.title}
                 className="group bg-surface p-6 md:p-8 lg:p-10 rounded-2xl md:rounded-3xl shadow-sm border border-outline-variant/30 flex flex-col h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+              >
+                <div className="w-12 md:w-14 h-12 md:h-14 rounded-xl md:rounded-2xl bg-primary/10 flex items-center justify-center mb-6 md:mb-8">
+                  <span className="material-symbols-outlined text-primary text-2xl md:text-3xl">
+                    {approach.icon}
+                  </span>
+                </div>
+                <h3 className="font-headline-md text-headline-md text-primary mb-3 md:mb-4">
+                  {approach.title}
+                </h3>
+                <p className="font-body-md text-on-surface-variant flex-grow leading-relaxed">
+                  {approach.description}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Ligne du bas : 2 cartes centrées sous la ligne du haut */}
+          <div className="mt-4 md:mt-6 lg:mt-[32px] flex flex-col md:flex-row justify-center gap-4 md:gap-6 lg:gap-[32px]">
+            {approaches.slice(3).map((approach) => (
+              <div
+                key={approach.title}
+                className="group bg-surface p-6 md:p-8 lg:p-10 rounded-2xl md:rounded-3xl shadow-sm border border-outline-variant/30 flex flex-col h-full w-full md:w-[calc((100%-2*1.5rem)/3)] lg:w-[calc((100%-2*2rem)/3)] transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
               >
                 <div className="w-12 md:w-14 h-12 md:h-14 rounded-xl md:rounded-2xl bg-primary/10 flex items-center justify-center mb-6 md:mb-8">
                   <span className="material-symbols-outlined text-primary text-2xl md:text-3xl">
