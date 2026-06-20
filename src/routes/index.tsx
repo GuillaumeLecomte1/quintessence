@@ -45,6 +45,9 @@ export function HomePage() {
       {/* Reflexology Section */}
       <ReflexologySection />
 
+      {/* Five Continents Massage Section */}
+      <FiveContinentsMassageSection />
+
       {/* Energy & Emotions Section */}
       <EnergySection />
 
@@ -332,6 +335,77 @@ function ReflexologySection() {
             />
           </div>
           <div className="absolute top-0 -left-4 md:-left-12 w-32 md:w-48 h-32 md:h-48 bg-tertiary-fixed-dim/20 rounded-full blur-3xl -z-10" />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function FiveContinentsMassageSection() {
+  return (
+    <section className="py-16 md:py-24 lg:py-[120px] bg-surface-container-low">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-[120px] items-center max-w-7xl mx-auto px-4 md:px-12">
+        <div className="relative mt-8 lg:mt-0">
+          <div className="aspect-square bg-surface-container rounded-full overflow-hidden border-[8px] md:border-[12px] lg:border-[16px] border-white shadow-2xl max-w-sm mx-auto lg:max-w-none">
+            <img
+              className="w-full h-full object-cover"
+              alt="Massage des 5 continents - un voyage sensoriel à travers le monde"
+              src="/image/massage_des_5_cts.png"
+            />
+          </div>
+          <div className="absolute top-0 -right-4 md:-right-12 w-32 md:w-48 h-32 md:h-48 bg-tertiary-fixed-dim/20 rounded-full blur-3xl -z-10" />
+        </div>
+        <div className="space-y-6 md:space-y-8 lg:space-y-[32px]">
+          <h2 className="font-display-md text-3xl md:text-4xl lg:text-[48px] leading-[1.2] tracking-[-0.01em] text-primary">
+            Le Massage des 5 Continents
+          </h2>
+          <p className="font-body-lg text-body-lg text-on-surface-variant">
+            Un voyage sensoriel autour du monde. En mêlant les gestes ancestraux
+            de plusieurs traditions, ce massage holistique invite le corps et
+            l'esprit à un véritable dépaysement intérieur.
+          </p>
+          <div className="grid grid-cols-1 gap-4 md:gap-6 lg:gap-[32px] pt-4 md:pt-8 lg:pt-[32px]">
+            <div className="group flex flex-col sm:flex-row gap-4 md:gap-[32px] p-4 md:p-6 rounded-2xl hover:bg-surface transition-colors cursor-default">
+              <div className="w-12 h-12 flex-shrink-0 bg-secondary-container rounded-full flex items-center justify-center text-secondary">
+                <span className="material-symbols-outlined">spa</span>
+              </div>
+              <div>
+                <h4 className="font-headline-md text-primary mb-1">Lomi-Lomi</h4>
+                <p className="font-body-md text-on-surface-variant">
+                  Un massage hawaïen fluide et enveloppant, à l'image des vagues
+                  de l'océan Pacifique.
+                </p>
+              </div>
+            </div>
+            <div className="group flex flex-col sm:flex-row gap-4 md:gap-[32px] p-4 md:p-6 rounded-2xl hover:bg-surface transition-colors cursor-default">
+              <div className="w-12 h-12 flex-shrink-0 bg-secondary-container rounded-full flex items-center justify-center text-secondary">
+                <span className="material-symbols-outlined">air</span>
+              </div>
+              <div>
+                <h4 className="font-headline-md text-primary mb-1">Ayurvédique</h4>
+                <p className="font-body-md text-on-surface-variant">
+                  Un protocole indien traditionnel qui réveille l'énergie vitale
+                  par de longs mouvements amples.
+                </p>
+              </div>
+            </div>
+            <div className="group flex flex-col sm:flex-row gap-4 md:gap-[32px] p-4 md:p-6 rounded-2xl hover:bg-surface transition-colors cursor-default">
+              <div className="w-12 h-12 flex-shrink-0 bg-secondary-container rounded-full flex items-center justify-center text-secondary">
+                <span className="material-symbols-outlined">
+                  self_improvement
+                </span>
+              </div>
+              <div>
+                <h4 className="font-headline-md text-primary mb-1">
+                  Californien
+                </h4>
+                <p className="font-body-md text-on-surface-variant">
+                  Une approche états-unienne, douce et globale, pour relâcher les
+                  tensions en profondeur.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
