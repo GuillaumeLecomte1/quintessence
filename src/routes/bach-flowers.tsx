@@ -96,42 +96,41 @@ export function BachFlowersPage() {
             <div className="group bg-surface p-6 md:p-8 lg:p-10 rounded-2xl md:rounded-3xl shadow-sm border border-outline-variant/30 flex flex-col h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
               <div className="w-12 md:w-14 h-12 md:h-14 rounded-xl md:rounded-2xl bg-primary/10 flex items-center justify-center mb-6 md:mb-8">
                 <span className="material-symbols-outlined text-primary text-2xl md:text-3xl">emergency</span>
-              </div>
-              <h3 className="font-headline-md text-headline-md text-primary mb-3 md:mb-4">Rescue Remedy</h3>
+              </div> <h3 className="font-headline-md text-headline-md text-primary mb-3 md:mb-4">Fleurs de Bach</h3>
               <p className="font-body-md text-on-surface-variant flex-grow leading-relaxed">
-                L'élixir d'urgence emblématique, composé de 5 fleurs. Idéal pour gérer les situations de stress aigu, les chocs émotionnels ou les moments d'anxiété intense.
+                Ces 38 élixirs floraux originels et naturels agissent sur les états émotionnels du quotidien. Ils aident à retrouver équilibre, sérénité et harmonie intérieure face aux défis de la vie.
               </p>
               <ul className="mt-4 md:mt-[16px] space-y-2 font-label-caps text-label-caps text-on-surface">
-                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary" /> Star of Bethlehem</li>
-                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary" /> Rock Rose</li>
+                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary" />Prunus,Pommier sauvage</li>
+                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary" />Houx, Marronnier rouge</li>
               </ul>
+             
             </div>
             {/* Fleurs Dupes */}
             <div className="group bg-surface p-6 md:p-8 lg:p-10 rounded-2xl md:rounded-3xl shadow-sm border border-outline-variant/30 flex flex-col h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
               <div className="w-12 md:w-14 h-12 md:h-14 rounded-xl md:rounded-2xl bg-primary/10 flex items-center justify-center mb-6 md:mb-8">
                 <span className="material-symbols-outlined text-primary text-2xl md:text-3xl">psychology</span>
-              </div>
-              <h3 className="font-headline-md text-headline-md text-primary mb-3 md:mb-4">Fleurs de l'État</h3>
+              </div> <h3 className="font-headline-md text-headline-md text-primary mb-3 md:mb-4">Fleurs contemporaines</h3>
               <p className="font-body-md text-on-surface-variant flex-grow leading-relaxed">
-                Ces 38 fleurs dites "dupes" traitent les peurs et anxieties. Elles permettent de retrouver calme et confiance face aux épreuves du quotidien.
+                Ces élixirs floraux modernes complètent les approches traditionnelles en agissant sur les émotions liées au stress actuel, aux changements rapides et aux problématiques du monde contemporain. Elles soutiennent l’adaptation, la clarté mentale et l’ancrage émotionnel.
               </p>
               <ul className="mt-4 md:mt-[16px] space-y-2 font-label-caps text-label-caps text-on-surface">
-                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary" /> Mimulus, Cherry Plum</li>
-                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary" /> Red Chestnut</li>
+                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary" /> Lotus, Bourrache, Zinnia, Lavande</li>
               </ul>
+             
             </div>
             {/* Fleurs Christiques */}
             <div className="group bg-surface p-6 md:p-8 lg:p-10 rounded-2xl md:rounded-3xl shadow-sm border border-outline-variant/30 flex flex-col h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
               <div className="w-12 md:w-14 h-12 md:h-14 rounded-xl md:rounded-2xl bg-primary/10 flex items-center justify-center mb-6 md:mb-8">
                 <span className="material-symbols-outlined text-primary text-2xl md:text-3xl">self_improvement</span>
               </div>
-              <h3 className="font-headline-md text-headline-md text-primary mb-3 md:mb-4">Fleurs Christiques</h3>
+              <h3 className="font-headline-md text-headline-md text-primary mb-3 md:mb-4">Remède d’urgence ou Rescue</h3>
               <p className="font-body-md text-on-surface-variant flex-grow leading-relaxed">
-                Les 7 fleurs pour ceux qui portent des responsabilités. Elles apaisent le sentiment d'être submergé et renforcent la capacité à prendre du recul.
+                L'élixir d'urgence emblématique, composé de 5 fleurs. Idéal pour gérer les situations de stress aigu, les chocs émotionnels ou les moments d'anxiété intense.
               </p>
               <ul className="mt-4 md:mt-[16px] space-y-2 font-label-caps text-label-caps text-on-surface">
-                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary" /> Walnut, Hornbeam</li>
-                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary" /> Centaury</li>
+                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary" /> Star of Bethlehem</li>
+                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary" /> Rock Rose</li>
               </ul>
             </div>
           </div>
