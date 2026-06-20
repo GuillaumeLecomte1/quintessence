@@ -81,9 +81,12 @@ function HeroSection() {
             harmoniser votre esprit et reconnecter avec votre essence profonde.
           </p>
           <div className="pt-4 md:pt-8 lg:pt-[32px] flex flex-col sm:flex-row gap-4 lg:gap-[32px]">
-            <button className="bg-primary text-on-primary px-6 md:px-8 lg:px-10 py-4 md:py-5 rounded-full font-label-caps text-label-caps transition-transform hover:scale-105 shadow-xl">
+            <a
+              href="#chemin-equilibre"
+              className="bg-primary text-on-primary px-6 md:px-8 lg:px-10 py-4 md:py-5 rounded-full font-label-caps text-label-caps transition-transform hover:scale-105 shadow-xl inline-block"
+            >
               Commencer l'expérience
-            </button>
+            </a>
             <button className="border-b-2 border-tertiary-fixed-dim px-2 py-4 md:py-5 font-label-caps text-label-caps text-primary hover:text-secondary transition-colors">
               Découvrir mes soins
             </button>
@@ -96,7 +99,10 @@ function HeroSection() {
 
 function NarrativeSection() {
   return (
-    <section className="py-16 md:py-24 lg:py-[120px] max-w-7xl mx-auto px-4 md:px-12">
+    <section
+      id="chemin-equilibre"
+      className="py-16 md:py-24 lg:py-[120px] max-w-7xl mx-auto px-4 md:px-12 scroll-mt-32"
+    >
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-[32px] items-center">
         <div className="lg:col-span-5 relative">
           <div className="aspect-[4/5] bg-surface-container overflow-hidden rounded-2xl max-w-md mx-auto lg:max-w-none">
