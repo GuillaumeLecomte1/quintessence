@@ -87,9 +87,9 @@ function HeroSection() {
             >
               Commencer l'expérience
             </a>
-            <button className="border-b-2 border-tertiary-fixed-dim px-2 py-4 md:py-5 font-label-caps text-label-caps text-primary hover:text-secondary transition-colors">
+            {/* <button className="border-b-2 border-tertiary-fixed-dim px-2 py-4 md:py-5 font-label-caps text-label-caps text-primary hover:text-secondary transition-colors">
               Découvrir mes soins
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
