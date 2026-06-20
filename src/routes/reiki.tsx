@@ -69,7 +69,7 @@ export function ReikiPage() {
               <img
                 className="w-full h-full object-cover"
                 alt="Reiki - Energy healing"
-                src="/image/Reiki 2.JPG"
+                src="/image/chakra.png"
               />
             </div>
             <div className="absolute -bottom-4 md:-bottom-6 -left-4 md:-left-12 hidden lg:block bg-surface-container-lowest p-6 md:p-8 rounded-2xl shadow-xl max-w-xs border border-outline-variant/10">
