@@ -69,8 +69,7 @@ export function ReikiPage() {
               <img
                 className="w-full h-full object-cover"
                 alt="Reiki - Energy healing"
-                src="/image/chakra.png"
-              />
+                src="/image/photo_reiki.png"              />
             </div>
             <div className="absolute -bottom-4 md:-bottom-6 -left-4 md:-left-12 hidden lg:block bg-surface-container-lowest p-6 md:p-8 rounded-2xl shadow-xl max-w-xs border border-outline-variant/10">
               <p className="font-display-md italic text-primary text-lg mb-2">"L'énergie suit l'intention."</p>
@@ -145,7 +144,7 @@ export function ReikiPage() {
           <div className="w-full lg:w-1/2">
             <div className="relative">
               <LightboxImage
-                src="/image/photo_reiki.png"
+                src="/image/Reiki2.png"
                 alt="Mains en position de Reiki"
                 className="rounded-[2rem] md:rounded-[3rem] lg:rounded-[4rem] shadow-xl aspect-square object-cover w-full"
               />
