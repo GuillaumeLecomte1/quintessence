@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
+import { LightboxImage } from "../components/ui/lightbox-image";
 
 export function NaturopathyPage() {
   return (
@@ -35,10 +36,10 @@ export function NaturopathyPage() {
           </div>
           <div className="md:col-span-5 relative">
             <div className="aspect-[4/5] rounded-[2rem] md:rounded-[1.5rem_1.5rem_0_10rem] overflow-hidden shadow-2xl bg-surface-container-high">
-              <img
-                className="w-full h-full object-cover"
-                alt="Naturopathie - Santé naturelle"
+              <LightboxImage
                 src="/image/Naturopathie.png"
+                alt="Naturopathie - Santé naturelle"
+                className="w-full h-full object-cover aspect-[4/5] rounded-[2rem] md:rounded-[1.5rem_1.5rem_0_10rem]"
               />
             </div>
             <div className="absolute -bottom-4 md:-bottom-6 -left-4 md:-left-12 hidden lg:block bg-surface-container-lowest p-6 md:p-8 rounded-2xl shadow-xl max-w-xs border border-outline-variant/10">
@@ -115,10 +116,10 @@ export function NaturopathyPage() {
         <div className="max-w-7xl mx-auto px-4 md:px-12 flex flex-col lg:flex-row gap-8 md:gap-16 lg:gap-[120px] items-center">
           <div className="w-full lg:w-1/2">
             <div className="relative">
-              <img
-                className="rounded-[2rem] md:rounded-[3rem] lg:rounded-[4rem] shadow-xl aspect-square object-cover w-full"
-                alt="Consultation naturopathie"
+              <LightboxImage
                 src="/image/photo_naturopathie2.png"
+                alt="Consultation naturopathie"
+                className="rounded-[2rem] md:rounded-[3rem] lg:rounded-[4rem] shadow-xl aspect-square object-cover w-full"
               />
               <div className="absolute -top-4 md:-top-10 -right-4 md:-right-10 w-28 md:w-48 h-28 md:h-48 bg-secondary-container rounded-full flex items-center justify-center text-center p-4 shadow-lg rotate-12">
                 <p className="text-on-secondary-container font-headline font-bold text-xs md:text-sm leading-tight">Vitalité Naturelle Durable</p>

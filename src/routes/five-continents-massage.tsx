@@ -66,10 +66,10 @@ export function FiveContinentsMassagePage() {
           </div>
           <div className="md:col-span-5 relative">
             <div className="aspect-[4/5] rounded-[2rem] md:rounded-[1.5rem_1.5rem_0_10rem] overflow-hidden shadow-2xl bg-surface-container-high">
-              <img
-                className="w-full h-full object-cover"
-                alt="Massage des 5 continents - Voyage sensoriel"
+              <LightboxImage
                 src="/image/massage_des_5_cts.png"
+                alt="Massage des 5 continents - Voyage sensoriel"
+                className="w-full h-full object-cover aspect-[4/5] rounded-[2rem] md:rounded-[1.5rem_1.5rem_0_10rem]"
               />
             </div>
             <div className="absolute -bottom-4 md:-bottom-6 -left-4 md:-left-12 hidden lg:block bg-surface-container-lowest p-6 md:p-8 rounded-2xl shadow-xl max-w-xs border border-outline-variant/10">

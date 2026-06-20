@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { LightboxImage } from "../components/ui/lightbox-image";
 import { Helmet } from "react-helmet-async";
 
 const timelineSteps = [
@@ -117,10 +118,10 @@ export function AboutStoryPage() {
           </div>
           <div className="md:col-span-5 relative">
             <div className="aspect-[4/5] rounded-[2rem] md:rounded-[1.5rem_1.5rem_0_10rem] overflow-hidden shadow-2xl bg-surface-container-high">
-              <img
-                className="w-full h-full object-cover"
-                alt="Portrait de Delphine, praticienne en naturopathie à Roppe"
+              <LightboxImage
                 src="/image/Portrait.jpg"
+                alt="Portrait de Delphine, praticienne en naturopathie à Roppe"
+                className="w-full h-full object-cover aspect-[4/5] rounded-[2rem] md:rounded-[1.5rem_1.5rem_0_10rem]"
               />
             </div>
             <div className="absolute -bottom-4 md:-bottom-6 -left-4 md:-left-12 hidden lg:block bg-surface-container-lowest p-6 md:p-8 rounded-2xl shadow-xl max-w-xs border border-outline-variant/10">
@@ -189,10 +190,10 @@ export function AboutStoryPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-[32px] items-center">
           <div className="lg:col-span-5 relative">
             <div className="aspect-[4/5] bg-surface-container overflow-hidden rounded-2xl max-w-md mx-auto lg:max-w-none">
-              <img
-                className="w-full h-full object-cover grayscale-[20%]"
-                alt="Cabinet de Delphine, un espace apaisant à Roppe"
+              <LightboxImage
                 src="/image/Bureau (2).jpg"
+                alt="Cabinet de Delphine, un espace apaisant à Roppe"
+                className="w-full h-full object-cover grayscale-[20%] aspect-[4/5] rounded-2xl"
               />
             </div>
           </div>
@@ -258,10 +259,10 @@ export function AboutStoryPage() {
           </div>
           <div className="lg:col-span-5 lg:col-start-8 relative order-1 lg:order-2">
             <div className="aspect-[4/5] bg-surface-container overflow-hidden rounded-2xl max-w-md mx-auto lg:max-w-none">
-              <img
-                className="w-full h-full object-cover grayscale-[20%]"
-                alt="Approche holistique de Delphine, praticienne à Roppe"
+              <LightboxImage
                 src="/image/delph_plantaire.jpg"
+                alt="Approche holistique de Delphine, praticienne à Roppe"
+                className="w-full h-full object-cover grayscale-[20%] aspect-[4/5] rounded-2xl"
               />
             </div>
           </div>

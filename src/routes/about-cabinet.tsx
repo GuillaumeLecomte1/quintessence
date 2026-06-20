@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { LightboxImage } from "../components/ui/lightbox-image";
 
 export function AboutCabinetPage() {
   return (
@@ -23,10 +24,10 @@ export function AboutCabinetPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-[32px] items-center">
           <div className="lg:col-span-5 relative">
             <div className="aspect-[4/5] bg-surface-container overflow-hidden rounded-2xl max-w-md mx-auto lg:max-w-none">
-              <img
-                className="w-full h-full object-cover grayscale-[20%]"
-                alt="Interior of the healing space with natural elements"
+              <LightboxImage
                 src="/image/Bureau (2).jpg"
+                alt="Interior of the healing space with natural elements"
+                className="w-full h-full object-cover grayscale-[20%] aspect-[4/5] rounded-2xl"
               />
             </div>
           </div>
@@ -95,10 +96,10 @@ export function AboutCabinetPage() {
           </div>
           <div className="lg:col-span-5 lg:col-start-8 relative">
             <div className="aspect-[4/5] bg-surface-container overflow-hidden rounded-2xl max-w-md mx-auto lg:max-w-none">
-              <img
-                className="w-full h-full object-cover grayscale-[20%]"
-                alt="Hands gently holding healing crystals"
+              <LightboxImage
                 src="/image/Bureau1.jpg"
+                alt="Hands gently holding healing crystals"
+                className="w-full h-full object-cover grayscale-[20%] aspect-[4/5] rounded-2xl"
               />
             </div>
           </div>
