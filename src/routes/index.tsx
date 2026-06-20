@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { motion } from "motion/react";
+import { LightboxImage } from "../components/ui/lightbox-image";
 
 export function HomePage() {
   return (
@@ -109,10 +110,10 @@ function NarrativeSection() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-[32px] items-center">
         <div className="lg:col-span-5 relative">
           <div className="aspect-[4/5] bg-surface-container overflow-hidden rounded-2xl max-w-md mx-auto lg:max-w-none">
-            <img
-              className="w-full h-full object-cover grayscale-[20%]"
-              alt="A professional and warm portrait of Delphine"
+            <LightboxImage
               src="/image/Portrait.jpg"
+              alt="A professional and warm portrait of Delphine"
+              className="w-full h-full object-cover grayscale-[20%] aspect-[4/5] rounded-2xl"
             />
           </div>
           <div className="absolute -bottom-4 md:-bottom-8 -right-4 md:-right-8 bg-primary p-4 md:p-4 rounded-2xl shadow-2xl max-w-[280px] md:max-w-xs">
@@ -328,10 +329,10 @@ function ReflexologySection() {
         </div>
         <div className="relative mt-8 lg:mt-0">
           <div className="aspect-square bg-surface-container rounded-full overflow-hidden border-[8px] md:border-[12px] lg:border-[16px] border-white shadow-2xl max-w-sm mx-auto lg:max-w-none">
-            <img
-              className="w-full h-full object-cover"
-              alt="Hands performing reflexology treatment"
+            <LightboxImage
               src="https://sekoya-spa.fr/wp-content/uploads/2023/05/Soin-precieux-des-pieds-2.png"
+              alt="Hands performing reflexology treatment"
+              className="w-full h-full object-cover aspect-square rounded-full"
             />
           </div>
           <div className="absolute top-0 -left-4 md:-left-12 w-32 md:w-48 h-32 md:h-48 bg-tertiary-fixed-dim/20 rounded-full blur-3xl -z-10" />
@@ -347,10 +348,10 @@ function FiveContinentsMassageSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-[120px] items-center max-w-7xl mx-auto px-4 md:px-12">
         <div className="relative mt-8 lg:mt-0">
           <div className="aspect-square bg-surface-container rounded-full overflow-hidden border-[8px] md:border-[12px] lg:border-[16px] border-white shadow-2xl max-w-sm mx-auto lg:max-w-none">
-            <img
-              className="w-full h-full object-cover"
-              alt="Massage des 5 continents - un voyage sensoriel à travers le monde"
+            <LightboxImage
               src="/image/massage_des_5_cts.png"
+              alt="Massage des 5 continents - un voyage sensoriel à travers le monde"
+              className="w-full h-full object-cover aspect-square rounded-full"
             />
           </div>
           <div className="absolute top-0 -right-4 md:-right-12 w-32 md:w-48 h-32 md:h-48 bg-tertiary-fixed-dim/20 rounded-full blur-3xl -z-10" />
@@ -417,65 +418,67 @@ function EnergySection() {
     <section className="py-16 md:py-24 lg:py-[120px] relative overflow-hidden">
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-secondary-container/30 via-surface to-surface" />
       <div className="max-w-7xl mx-auto px-4 md:px-12">
-        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16 lg:mb-[120px]">
-          <h2 className="font-display-md text-3xl md:text-4xl lg:text-[48px] leading-[1.2] tracking-[-0.01em] text-primary mt-4">
-            Énergie & Émotions
-          </h2>
-          <p className="font-body-lg text-body-lg text-on-surface-variant mt-4 md:mt-[16px]">
-            Là où les mots s'arrêtent, l'énergie et la vibration des plantes
-            prennent le relais pour apaiser les tempêtes intérieures.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 lg:gap-[48px]">
-          {/* Reiki */}
-          <div className="relative group">
-            <div className="absolute -inset-2 bg-gradient-to-br from-secondary/5 to-primary/5 rounded-[32px] md:rounded-[40px] blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
-            <div className="relative bg-white/40 backdrop-blur-md p-6 md:p-8 lg:p-12 rounded-2xl md:rounded-[32px] border border-white/50 shadow-sm overflow-hidden">
-              <div className="flex justify-between items-start">
-                <h3 className="font-display-md text-primary">Reiki</h3>
-                <span className="material-symbols-outlined text-3xl md:text-4xl text-on-tertiary-container">
-                  light_mode
-                </span>
-              </div>
-              <p className="font-body-lg text-on-surface-variant mt-6 md:mt-8 lg:mt-[32px] leading-relaxed">
-                Une séance énergétique pour lever les blocages, réactiver vos
-                centres vitaux et instaurer un état de relaxation profonde,
-                quasi méditatif.
-              </p>
-              <div className="mt-6 md:mt-8 lg:mt-[32px] flex flex-wrap gap-2 md:gap-4">
-                <span className="px-3 md:px-4 py-2 bg-surface-container rounded-full font-label-caps text-label-caps text-primary">
-                  Harmonie
-                </span>
-                <span className="px-3 md:px-4 py-2 bg-surface-container rounded-full font-label-caps text-label-caps text-primary">
-                  Sérénité
-                </span>
-                <span className="px-3 md:px-4 py-2 bg-surface-container rounded-full font-label-caps text-label-caps text-primary">
-                  Libération
-                </span>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 lg:gap-[48px] items-start">
+          <div className="md:sticky md:top-32">
+            <h2 className="font-display-md text-3xl md:text-4xl lg:text-[48px] leading-[1.2] tracking-[-0.01em] text-primary">
+              Énergie & Émotions
+            </h2>
+            <p className="font-body-lg text-body-lg text-on-surface-variant mt-4 md:mt-[16px]">
+              Là où les mots s'arrêtent, l'énergie et la vibration des plantes
+              prennent le relais pour apaiser les tempêtes intérieures.
+            </p>
+          </div>
+          <div className="flex flex-col gap-6 md:gap-10 lg:gap-[48px]">
+            {/* Reiki */}
+            <div className="relative group">
+              <div className="absolute -inset-2 bg-gradient-to-br from-secondary/5 to-primary/5 rounded-[32px] md:rounded-[40px] blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="relative bg-white/40 backdrop-blur-md p-6 md:p-8 lg:p-12 rounded-2xl md:rounded-[32px] border border-white/50 shadow-sm overflow-hidden">
+                <div className="flex justify-between items-start">
+                  <h3 className="font-display-md text-primary">Reiki</h3>
+                  <span className="material-symbols-outlined text-3xl md:text-4xl text-on-tertiary-container">
+                    light_mode
+                  </span>
+                </div>
+                <p className="font-body-lg text-on-surface-variant mt-6 md:mt-8 lg:mt-[32px] leading-relaxed">
+                  Une séance énergétique pour lever les blocages, réactiver vos
+                  centres vitaux et instaurer un état de relaxation profonde,
+                  quasi méditatif.
+                </p>
+                <div className="mt-6 md:mt-8 lg:mt-[32px] flex flex-wrap gap-2 md:gap-4">
+                  <span className="px-3 md:px-4 py-2 bg-surface-container rounded-full font-label-caps text-label-caps text-primary">
+                    Harmonie
+                  </span>
+                  <span className="px-3 md:px-4 py-2 bg-surface-container rounded-full font-label-caps text-label-caps text-primary">
+                    Sérénité
+                  </span>
+                  <span className="px-3 md:px-4 py-2 bg-surface-container rounded-full font-label-caps text-label-caps text-primary">
+                    Libération
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-          {/* Bach Flowers */}
-          <div className="relative group">
-            <div className="absolute -inset-2 bg-gradient-to-br from-tertiary/5 to-on-tertiary-container/5 rounded-[32px] md:rounded-[40px] blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
-            <div className="relative bg-white/40 backdrop-blur-md p-6 md:p-8 lg:p-12 rounded-2xl md:rounded-[32px] border border-white/50 shadow-sm overflow-hidden">
-              <div className="flex justify-between items-start">
-                <h3 className="font-display-md text-primary">Fleurs de Bach</h3>
-                <span className="material-symbols-outlined text-3xl md:text-4xl text-on-tertiary-container">
-                  local_florist
-                </span>
-              </div>
-              <p className="font-body-lg text-on-surface-variant mt-6 md:mt-8 lg:mt-[32px] leading-relaxed">
-                Les 38 élixirs du Dr Bach pour équilibrer vos états émotionnels
-                passagers ou récurrents à travers les 7 familles de sentiments.
-              </p>
-              <div className="mt-6 md:mt-8 lg:mt-[32px] flex flex-wrap gap-2 md:gap-4">
-                <span className="px-3 md:px-4 py-2 bg-on-tertiary-container/10 rounded-full font-label-caps text-label-caps text-on-tertiary-fixed-variant">
-                  Rescue Remedy
-                </span>
-                <span className="px-3 md:px-4 py-2 bg-on-tertiary-container/10 rounded-full font-label-caps text-label-caps text-on-tertiary-fixed-variant">
-                  7 Familles
-                </span>
+            {/* Bach Flowers */}
+            <div className="relative group">
+              <div className="absolute -inset-2 bg-gradient-to-br from-tertiary/5 to-on-tertiary-container/5 rounded-[32px] md:rounded-[40px] blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="relative bg-white/40 backdrop-blur-md p-6 md:p-8 lg:p-12 rounded-2xl md:rounded-[32px] border border-white/50 shadow-sm overflow-hidden">
+                <div className="flex justify-between items-start">
+                  <h3 className="font-display-md text-primary">Fleurs de Bach</h3>
+                  <span className="material-symbols-outlined text-3xl md:text-4xl text-on-tertiary-container">
+                    local_florist
+                  </span>
+                </div>
+                <p className="font-body-lg text-on-surface-variant mt-6 md:mt-8 lg:mt-[32px] leading-relaxed">
+                  Les 38 élixirs du Dr Bach pour équilibrer vos états émotionnels
+                  passagers ou récurrents à travers les 7 familles de sentiments.
+                </p>
+                <div className="mt-6 md:mt-8 lg:mt-[32px] flex flex-wrap gap-2 md:gap-4">
+                  <span className="px-3 md:px-4 py-2 bg-on-tertiary-container/10 rounded-full font-label-caps text-label-caps text-on-tertiary-fixed-variant">
+                    Rescue Remedy
+                  </span>
+                  <span className="px-3 md:px-4 py-2 bg-on-tertiary-container/10 rounded-full font-label-caps text-label-caps text-on-tertiary-fixed-variant">
+                    7 Familles
+                  </span>
+                </div>
               </div>
             </div>
           </div>
